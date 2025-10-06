@@ -47,9 +47,9 @@ Founded in Dubai, we’ve been at the forefront of financial innovation, empower
 <h2 className="text-xl">Our mission is to simplify complex trading challenges through automation, precision, and data intelligence, ensuring seamless execution and superior performance across global markets.</h2>
       </div>
 </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-justify">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-justify  ">
         {testimonials.map((item, index) => (
-          <div key={index} className="text-left">
+          <div key={index} className="text-left border p-4 bg-gray-200">
             <div className="relative">
             
             </div>
