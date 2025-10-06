@@ -333,18 +333,18 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://picsum.photos/seed/1/800/600?grayscale`, text: 'Bridge' },
-      { image: `https://picsum.photos/seed/2/800/600?grayscale`, text: 'Desk Setup' },
-      { image: `https://picsum.photos/seed/3/800/600?grayscale`, text: 'Waterfall' },
-      { image: `https://picsum.photos/seed/4/800/600?grayscale`, text: 'Strawberries' },
-      { image: `https://picsum.photos/seed/5/800/600?grayscale`, text: 'Deep Diving' },
-      { image: `https://picsum.photos/seed/16/800/600?grayscale`, text: 'Train Track' },
-      { image: `https://picsum.photos/seed/17/800/600?grayscale`, text: 'Santorini' },
-      { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: 'Blurry Lights' },
-      { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: 'New York' },
-      { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: 'Good Boy' },
-      { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: 'Coastline' },
-      { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: 'Palm Trees' }
+      { image: `https://t4.ftcdn.net/jpg/06/68/26/49/360_F_668264924_rL99oxyvLOo6sSajcqCuHA5xmE0cRUbY.jpg`, text: 'Bridge' },
+      { image: `https://c8.alamy.com/comp/PB5HPF/cripto-currency-bitcoin-global-internet-worldwide-abstract-matrix-background-binary-computer-code-vector-tech-background-PB5HPF.jpg?grayscale`, text: 'Desk Setup' },
+      { image: `https://www.intelligentcio.com/latam/wp-content/uploads/sites/49/2024/04/AdobeStock_407741497-web.jpg`, text: 'Waterfall' },
+      { image: `https://static.vecteezy.com/system/resources/previews/008/296/346/non_2x/cripto-currency-bitcoin-crypto-on-mobile-banner-vector.jpg`, text: 'Strawberries' },
+      { image: `https://t4.ftcdn.net/jpg/12/89/18/77/360_F_1289187725_WqzljBSDQIYMnbpZcW4JFqDYlsKzL81N.jpg`, text: 'Deep Diving' },
+      { image: `https://www.santander.com/content/dam/santander-com/es/stories/contenido-stories/2021/educacionfinanciera/im-storie-guia-para-saber-que-son-las-criptomonedas-3.jpg`, text: 'Train Track' },
+      { image: `https://www.fundeu.es/wp-content/uploads/2021/02/cripto.jpg`, text: 'Santorini' },
+      { image: `https://www.prosegur.com/dam/jcr:56b75bb9-ee47-4414-a85c-a9392d4d98ce/GettyImages-1182014860.jpg`, text: 'Blurry Lights' },
+      { image: `https://www.shutterstock.com/image-vector/blockchain-technology-cryptocurrency-marketplace-bitcoin-260nw-1892054101.jpg`, text: 'New York' },
+      { image: `https://t4.ftcdn.net/jpg/06/04/85/25/360_F_604852528_3rV0xpOVEDCWU0rRl5rnyKkv3CpQ5rB0.jpg`, text: 'Good Boy' },
+      { image: `https://thumbs.dreamstime.com/b/eye-catching-red-arrows-point-downward-towards-large-cryptocurrency-logo-symbolizing-market-trends-economic-shifts-bright-373327486.jpg`, text: 'Coastline' },
+      { image: `https://img.freepik.com/premium-psd/cripto-currency-bitcoin-global-internet-worldwide_501590-9483.jpg`, text: 'Palm Trees' }
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
@@ -470,5 +470,5 @@ export default function CircularGallery({
       app.destroy();
     };
   }, [items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase]);
-  return <div className="w-full h-full overflow-hidden cursor-grab active:cursor-grabbing" ref={containerRef} />;
+  return <div className="relative bg-white w-full h-full overflow-hidden cursor-grab active:cursor-grabbing" ref={containerRef} />;
 }

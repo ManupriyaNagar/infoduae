@@ -1,89 +1,100 @@
-import React from 'react';
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="bg-white py-16 px-4 md:py-24 md:px-12 lg:px-24">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start">
-        
-        {/* === Left Content Section: Headline and CTAs === */}
-        <div className="w-full lg:w-3/5 mb-10 lg:mb-0">
-          
-          {/* Main Headline */}
-          <h1 className="text-5xl md:text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
-         Unlocking the Future of Financial Trading with Next-Generation Algo Software
-            {/* SaaS Companies Gradient Text */}
-            <span 
-              className="block bg-gradient(90deg, #9333ea, #a855f7, #d8b4fe) bg-clip-text text-transparent transform translate-x-1/4 -translate-y-1"
-            >
-              Saas Companies
-            </span>
-            
-            {/* Future Unicorns Gradient Text */}
-            <span 
-              className="block bg-gradient-unicorns bg-clip-text text-transparent transform translate-x-1/2 -translate-y-2"
-            >
-              future unicorns
-            </span>
+    <section
+      className="relative bg-black text-white py-20 md:py-32 overflow-hidden"
+      style={{
+        backgroundImage: "url('/bg.jpeg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
+
+      {/* Content Container */}
+      <div className="relative z-10 container mx-auto px-6 flex flex-col lg:flex-row justify-between items-center lg:items-start gap-16">
+        {/* === Left Content === */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="w-full lg:w-3/5"
+        >
+          <h1 className="text-4xl sm:text-5xl lg:text-[4rem] font-extrabold leading-[1.1] text-white tracking-tight">
+            Empowering the Future of {" "}
+            <span className="text-transparent bg-gradient-to-r from-[#00FFAA] to-[#00BFA6] bg-clip-text">
+              Financial Trading
+            </span>{" "}
+           with Intelligent Algo Solutions
           </h1>
 
-          {/* CTA Buttons */}
-          <div className="flex space-x-4 mt-10">
-            <a
-              href="#"
-              className="bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300 flex items-center"
-            >
-              Book a call
-              {/* Optional: Add a right arrow icon */}
-              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
-            </a>
-            <a
-              href="#"
-              className="border border-gray-400 text-gray-900 font-semibold py-3 px-6 rounded-lg hover:border-gray-900 transition duration-300"
-            >
-              View case studies
-            </a>
-          </div>
-        </div>
-
-        {/* === Right Content Section: Social Proof === */}
-        <div className="w-full lg:w-2/5 text-right flex flex-col items-center lg:items-end pt-12 lg:pt-0">
-          
-          {/* Descriptive Text */}
-          <p className="text-gray-700 max-w-sm mb-4 text-left lg:text-right">
-            We deliver globally UI UX & web design smoothly, without delay, saving your time and money with an efficient process.
+          <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed">
+           At infod, we deliver cutting-edge algorithmic trading systems designed to empower investors across the globe. Our AI-driven strategies are engineered to optimize performance, minimize risk, and unlock consistent market opportunities
           </p>
-          
-          {/* Rating / Logos (Mockup - replace with actual images/SVGs) */}
-          <div className="flex items-center space-x-4">
-            {/* Placeholder for Logo 1: 400Founders */}
-            <div className="flex flex-col items-center">
-                <span className="text-4xl font-black text-gray-800 leading-none">400</span>
-                <span className="text-xs text-gray-500">Founders</span>
-            </div>
 
-            {/* Placeholder for Logo 2: Loved by */}
-            <div className="flex flex-col items-center">
-                {/* A small heart icon for "Loved by" */}
-                <svg className="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd"></path></svg>
-                <span className="text-xs text-gray-500">Loved by 500+ Founders</span>
-            </div>
+          {/* CTA Buttons */}
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="#"
+              className="relative group inline-flex items-center justify-center bg-gradient-to-r from-[#00FFAA] to-[#00BFA6] text-black font-semibold text-lg py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-[0_0_20px_#00FFAA55]"
+            >
+              Get Started
+              <svg
+                className="ml-3 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
 
-            {/* Placeholder for Logo 3 & Ratings */}
-            <div className="flex items-center space-x-2">
-                <span className="text-3xl font-bold text-red-600">C</span>
-                <div className="flex flex-col items-start">
-                    {/* 5 Red Stars */}
-                    <div className="text-red-500 flex text-lg">
-                        {'★'.repeat(5)}
-                    </div>
-                    <span className="text-xs text-gray-500">13 REVIEWS</span>
-                </div>
-            </div>
+            <a
+              href="#"
+              className="inline-flex items-center justify-center border border-[#00FFAA] text-[#00FFAA] font-medium text-lg py-3 px-8 rounded-full hover:bg-[#00FFAA] hover:text-black transition-all duration-300"
+            >
+              Learn More
+            </a>
+          </div>
+        </motion.div>
+
+        {/* === Right Content === */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.2 }}
+          className="w-full lg:w-2/5 text-left lg:text-right"
+        >
+          <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_#00FFAA25] transition-all duration-300">
+            <h3 className="text-2xl font-semibold mb-4 text-[#00FFAA]">
+              About infod:
+            </h3>
+            <p className="text-gray-300 leading-relaxed text-lg">
+              Founded in Dubai, infod is redefining the way the world trades. Since our inception, we’ve been dedicated to creating innovative, data-driven trading platforms that merge technology, intelligence, and precision. <br />
+              Experience seamless automation — where human insight meets algorithmic excellence.
+            </p>
           </div>
 
-        </div>
+          {/* Social Proof or Partner Logos (Placeholder) */}
+          <div className="mt-10 flex justify-center lg:justify-end gap-6 opacity-80">
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center text-[#00FFAA] font-bold">
+              FX
+            </div>
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center text-[#00FFAA] font-bold">
+              AI
+            </div>
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center text-[#00FFAA] font-bold">
+              24/7
+            </div>
+          </div>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

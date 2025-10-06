@@ -2,58 +2,65 @@
 export default function FounderTestimonials() {
   const testimonials = [
     {
-      name: "Matt Kabus",
+      name: "Investment Management",
       title: "CEO & Founder @LifeTales",
       company: "LifeTales",
       image: "/testimonials/matt.jpg",
       quote:
-        "Wavespace is a fantastic design team, with a healthy blend of UI and UX skills. Highly recommended",
+        "At infod, our Investment Management services are designed to help clients grow and preserve their wealth through strategic, data-driven asset management. We tailor our portfolio strategies to align with individual goals, risk profiles, and market dynamics  providing comprehensive investment solutions that deliver long-term value and stability.",
     },
     {
-      name: "Ishraq Khan",
+      name: "Market Alerts",
       title: "CEO @Kodezi",
       company: "Kodezi",
       image: "/testimonials/ishraq.jpg",
       quote:
-        "Wavespace very reliable at all times and we have enjoyed working & designs are truly impressive. An absolute pleasure to work with and I'm super satisfied with the results. Highly recommended!",
+        "Stay ahead of the market with infod’s real-time trading insights. Our Market Alerts deliver accurate, timely signals that empower investors to make confident decisions and optimize their trading performance. With precision analytics and AI-powered forecasting, you’ll never miss an opportunity again.",
     },
     {
-      name: "Nikita Ribakovs",
+      name: "Uplearn",
       title: "Founder & CEO @Tournated",
       company: "tournated",
       image: "/testimonials/nikita.jpg",
       quote:
-        "Highly happy with a design delivered by Wavespace. Definitely will keep working with Wavespace. Great quality and smooth communication",
+        "At infod, we believe in Uplearning — evolving beyond outdated methods and embracing innovative trading approaches. Through expert-led resources, practical insights, and AI-based strategy refinement, we help traders and investors redefine how they learn, trade, and grow in the modern financial landscape.",
     },
+    {
+      name:"Algo Trading Software",
+      quote:"Our Next-Generation Algo Trading Software combines the power of automation, AI, and real-time analytics to execute trades with unmatched precision and speed. By eliminating manual errors and emotional biases, infod’s algorithms enable smarter, faster, and more consistent trading — giving you an edge in every market condition."
+    }
   ];
 
   return (
-    <section className="py-16 bg-white text-center">
-      <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
-        500+ Founders trusted us. Get return <br />
-        on your <span className="text-gray-500">investment, multiplied!</span>
-      </h2>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto px-4">
+    <section className="py-16 bg-white  container mx-auto">
+      <div className="container mx-auto">
+      <div className="flex justify-between gap-10">
+        <div className="max-w-[40%]">
+      <h1 className="text-6xl font-bold text-gray-900 mb-12 ">
+       infod: <span className="text-gray-500"> Intelligent Global Trading Solutions</span> 
+      </h1>
+      </div>
+      <div className="max-w-[60%]">
+      <h2 className="text-xl">At infod, we don’t just follow the markets we master them.
+Founded in Dubai, we’ve been at the forefront of financial innovation, empowering traders and investors with advanced algorithmic trading technologies.</h2>
+<br />
+<h2 className="text-xl">Our mission is to simplify complex trading challenges through automation, precision, and data intelligence, ensuring seamless execution and superior performance across global markets.</h2>
+      </div>
+</div>
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-justify">
         {testimonials.map((item, index) => (
           <div key={index} className="text-left">
             <div className="relative">
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-full h-auto object-cover grayscale"
-              />
-              <div className="absolute bottom-4 left-4 text-white text-xl font-semibold">
-                {item.company}
-              </div>
+            
             </div>
-            <div className="mt-4 text-sm text-gray-800">
-              <div className="font-semibold">/ {item.name}</div>
-              <div className="text-xs text-gray-500">{item.title}</div>
-              <p className="mt-3 text-sm text-gray-700">"{item.quote}"</p>
+            <div className="mt-4 text-2xl text-gray-800">
+              <div className="font-semibold"> {item.name}</div>
+     
+              <p className="mt-3 text-xl text-gray-700">"{item.quote}"</p>
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
