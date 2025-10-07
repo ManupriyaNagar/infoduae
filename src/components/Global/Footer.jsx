@@ -30,11 +30,11 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col gap-10">
 
         {/* Social Buttons */}
-        <div className="flex flex-wrap justify-center md:justify-start gap-3 md:gap-6 mb-8">
+        {/* <div className="flex flex-wrap justify-center md:justify-start gap-3 md:gap-6 mb-8">
           {socialLinks.map((link) => (
             <SocialLink key={link.name} {...link} />
           ))}
-        </div>
+        </div> */}
 
         {/* Navigation Links */}
        <div className="flex flex-col gap-4 md:gap-6 text-center md:text-right items-center md:items-end w-full">
@@ -60,7 +60,7 @@ export default function Footer() {
         {/* Subscribe + Contact */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-800 pb-8">
           {/* Subscribe */}
-          <div className="w-full md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
+          {/* <div className="w-full md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
               Subscribe to Updates
             </h3>
@@ -77,7 +77,7 @@ export default function Footer() {
                 Submit
               </button>
             </form>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div className="text-center md:text-right w-full md:w-auto">

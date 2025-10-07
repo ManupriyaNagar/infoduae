@@ -37,7 +37,7 @@ const HeroSection = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="mt-10 flex flex-wrap gap-4">
+          {/* <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="#"
               className="relative group inline-flex items-center justify-center bg-gradient-to-r from-[#00FFAA] to-[#00BFA6] text-black font-semibold text-lg py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-[0_0_20px_#00FFAA55]"
@@ -60,7 +60,7 @@ const HeroSection = () => {
             >
               Learn More
             </a>
-          </div>
+          </div> */}
         </motion.div>
 
         {/* === Right Content === */}
