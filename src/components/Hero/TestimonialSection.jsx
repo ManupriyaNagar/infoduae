@@ -41,6 +41,19 @@ const testimonials = [
 ];
 
 export default function TestimonialSection() {
+
+    const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleDotClick = (index) => {
+    setActiveIndex(index);
+  };
+
+  const itemsPerPage = 1; // For mobile view, show 1 card at a time
+  const startIndex = activeIndex * itemsPerPage;
+  const visibleTestimonials = testimonials.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
   return (
     <section className="relative bg-gray-100 py-12 px-4 sm:px-6">
       <div className="container mx-auto">
@@ -96,14 +109,15 @@ export default function TestimonialSection() {
         </div>
 
         {/* Dots */}
-        <div className="flex justify-center mt-10 space-x-2">
-          {[...Array(6)].map((_, i) => (
-            <span
+          <div className="flex justify-center mt-10 space-x-2">
+          {Array.from({ length: testimonials.length }).map((_, i) => (
+            <button
               key={i}
-              className={`w-3 h-3 rounded-full ${
-                i === 0 ? "bg-gray-800" : "bg-gray-300"
+              onClick={() => handleDotClick(i)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                activeIndex === i ? "bg-gray-800" : "bg-gray-300"
               }`}
-            ></span>
+            ></button>
           ))}
         </div>
       </div>
