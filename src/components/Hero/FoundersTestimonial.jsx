@@ -4,22 +4,22 @@ export default function FounderTestimonials() {
     {
       name: "Investment Management",
       quote:
-        "At infod, our Investment Management services are designed to help clients grow and preserve their wealth through strategic, data-driven asset management. We tailor our portfolio strategies to align with individual goals, risk profiles, and market dynamics providing comprehensive investment solutions that deliver long-term value and stability.",
+        "At infod, our Investment Management services help clients grow and preserve wealth through strategic, data-driven asset management. We tailor portfolio strategies to align with individual goals, risk profiles, and market dynamics, providing comprehensive investment solutions that deliver long-term value and stability for every investor.",
     },
     {
       name: "Market Alerts",
       quote:
-        "Stay ahead of the market with infod’s real-time trading insights. Our Market Alerts deliver accurate, timely signals that empower investors to make confident decisions and optimize their trading performance. With precision analytics and AI-powered forecasting, you’ll never miss an opportunity again.",
+        "Stay ahead of the market with infod's real-time trading insights. Our Market Alerts deliver accurate, timely signals that empower investors to make confident decisions and optimize trading performance. With precision analytics and AI-powered forecasting, you'll never miss a profitable opportunity in today's fast-moving markets.",
     },
     {
       name: "Uplearn",
       quote:
-        "At infod, we believe in Uplearning — evolving beyond outdated methods and embracing innovative trading approaches. Through expert-led resources, practical insights, and AI-based strategy refinement, we help traders and investors redefine how they learn, trade, and grow in the modern financial landscape.",
+        "At infod, we believe in Uplearning—evolving beyond outdated methods and embracing innovative trading approaches. Through expert-led resources, practical insights, and AI-based strategy refinement, we help traders and investors redefine how they learn, trade, and grow in the modern financial landscape with confidence and skill.",
     },
     {
       name: "Algo Trading Software",
       quote:
-        "Our Next-Generation Algo Trading Software combines the power of automation, AI, and real-time analytics to execute trades with unmatched precision and speed. By eliminating manual errors and emotional biases, infod’s algorithms enable smarter, faster, and more consistent trading — giving you an edge in every market condition.",
+        "Our Next-Generation Algo Trading Software combines automation, AI, and real-time analytics to execute trades with unmatched precision and speed. By eliminating manual errors and emotional biases, infod's algorithms enable smarter, faster, and more consistent trading—giving you a decisive edge in all market conditions across global exchanges.",
     },
   ];
 
@@ -37,8 +37,8 @@ export default function FounderTestimonials() {
         </div>
         <div className="md:max-w-[60%] text-gray-800">
           <h2 className="text-lg md:text-xl leading-relaxed">
-            At infod, we don’t just follow the markets we master them. Founded
-            in Dubai, we’ve been at the forefront of financial innovation,
+            At infod, we don't just follow the markets—we master them. Founded
+            in Dubai, we've been at the forefront of financial innovation,
             empowering traders and investors with advanced algorithmic trading
             technologies.
           </h2>
