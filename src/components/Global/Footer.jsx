@@ -9,10 +9,10 @@ const socialLinks = [
 ];
 
 const navLinks = [
-  { name: "Home", width: "w-[30vw]" },
-  { name: "About", width: "w-[20vw]" },
-  { name: "Service", width: "w-[40vw]" },
-  { name: "Contact", width: "w-[25vw]" },
+  { name: "Home", width: "w-[30vw]" , href: "/" },
+  { name: "About", width: "w-[20vw]" , href: "/about" },
+  { name: "Service", width: "w-[40vw]" , href: "/service" },
+  { name: "Contact", width: "w-[25vw]" , href: "/contact" },
 ];
 
 export default function Footer() {
@@ -43,9 +43,11 @@ export default function Footer() {
       key={link.name}
       className="flex flex-col sm:flex-row items-center justify-center md:justify-end text-2xl sm:text-4xl md:text-5xl font-light group"
     >
+      <a href={link.href} className="block text-white group-hover:text-[#00FFAA] transition-colors">
       <span className="text-white group-hover:text-[#00FFAA] transition-colors duration-300">
         {link.name}
       </span>
+      </a>
       <span className="hidden sm:flex items-center ml-4">
         <span className="w-2 h-2 rounded-full border border-[#00FFAA]"></span>
         <span
@@ -105,8 +107,8 @@ export default function Footer() {
           <div className="text-center w-full md:w-1/3">
             Powered by{" "}
             <a
-              href="https://rbshstudio.com/"
-              className="hover:text-[#00FFAA] transition"
+              href="https://rbshstudio.com/" target="_blank"
+              className="hover:text-[#00FFAA] transition cursor-pointer"
             >
               RBSH STUDIO
             </a>
