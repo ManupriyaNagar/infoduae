@@ -70,9 +70,9 @@ export default function MarketAlerts() {
         </div>
 
         {/* What Are Market Alerts */}
-        <div className="max-w-7xl mx-auto text-center mb-16 bg-white p-10">
-          <h3 className="text-2xl font-semibold mb-4 text-black">What Are Market Alerts?</h3>
-          <p className="text-gray-800 leading-relaxed">
+        <div className="max-w-7xl mx-auto text-center border border-gray-700  rounded-2xl hover:border-[#00FFAA]  mb-16  p-10">
+          <h3 className="text-2xl font-semibold mb-4 ">What Are Market Alerts?</h3>
+          <p className="text-gray-100 leading-relaxed">
             Market Alerts are real-time trading triggers derived from technical, algorithmic, and fundamental analysis.
             At InfoD, we leverage intelligent systems and expert insight to deliver precise buy/sell opportunities that
             empower traders to act confidently in fast-moving markets.

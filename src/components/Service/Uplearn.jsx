@@ -59,20 +59,20 @@ export default function UpLearn() {
               whileHover={{ scale: 1.05 }}
               className="border border-gray-700 rounded-2xl p-6 hover:border-[#00FFAA] transition-all"
             >
-              <h3 className="text-3xl font-semibold text-[#00FFAA] mb-2">{s.value}</h3>
+              <h3 className="text-3xl font-semibold text-[#00FFAA]  mb-2">{s.value}</h3>
               <p className="text-gray-400 uppercase text-sm tracking-widest">{s.label}</p>
             </motion.div>
           ))}
         </div>
 
         {/* Curriculum */}
-        <div className="max-w-7xl mx-auto mb-16 p-8 bg-white">
-          <h3 className="text-2xl font-semibold mb-4 text-black">What You’ll Learn</h3>
-          <p className="text-gray-800 leading-relaxed mb-6">
+        <div className="max-w-7xl mx-auto border border-gray-600  rounded-xl  mb-16 p-8 ">
+          <h3 className="text-2xl font-semibold mb-4 text-left text-[#00FFAA]">What You’ll Learn</h3>
+          <p className="text-gray-100 text-left leading-relaxed mb-6">
             Gain in-depth knowledge from fundamentals to advanced strategies through live examples and real trading
             insights.
           </p>
-          <ul className="text-left text-gray-700 space-y-3 list-decimal list-inside">
+          <ul className="text-left text-gray-100 space-y-3 list-decimal list-inside">
             <li>Master proven technical analysis for buying and selling stocks.</li>
             <li>Learn trend and reversal indicators for consistent results.</li>
             <li>Identify trends and chart patterns to plan precise entries and exits.</li>
@@ -122,7 +122,7 @@ export default function UpLearn() {
         </div> */}
 
         {/* FAQ */}
-        <div className="bg-white text-black text-left max-w-7xl mx-auto p-10">
+        <div className=" text-left max-w-7xl mx-auto p-10">
           <h3 className="text-2xl font-semibold mb-6 text-center ]">
             Frequently Asked Questions
           </h3>
