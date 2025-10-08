@@ -52,17 +52,17 @@ export default function FounderTestimonials() {
       </div>
 
       {/* Testimonials Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
         {testimonials.map((item, index) => (
           <div
             key={index}
-            className="text-left border border-gray-300 p-6 rounded-2xl bg-gradient-to-r from-[#00FFAA] to-[#00BFA6] hover:bg-gray-200 transition"
+            className="text-left border border-gray-300 p-6 rounded-2xl  hover:bg-gray-200 transition"
           >
             <div className="mt-2">
               <div className="text-2xl font-semibold text-gray-900 mb-3">
                 {item.name}
               </div>
-              <p className="text-base md:text-lg text-gray-700 leading-relaxed text-justify">
+              <p className="text-base md:text-md text-gray-700 leading-relaxed">
                 “{item.quote}”
               </p>
             </div>

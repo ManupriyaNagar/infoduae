@@ -70,9 +70,9 @@ export default function MarketAlerts() {
         </div>
 
         {/* What Are Market Alerts */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h3 className="text-2xl font-semibold mb-4 text-[#00FFAA]">What Are Market Alerts?</h3>
-          <p className="text-gray-300 leading-relaxed">
+        <div className="max-w-7xl mx-auto text-center mb-16 bg-white p-10">
+          <h3 className="text-2xl font-semibold mb-4 text-black">What Are Market Alerts?</h3>
+          <p className="text-gray-800 leading-relaxed">
             Market Alerts are real-time trading triggers derived from technical, algorithmic, and fundamental analysis.
             At InfoD, we leverage intelligent systems and expert insight to deliver precise buy/sell opportunities that
             empower traders to act confidently in fast-moving markets.
@@ -113,7 +113,7 @@ export default function MarketAlerts() {
         </div>
 
         {/* CTA */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -125,7 +125,7 @@ export default function MarketAlerts() {
           <button className="px-8 py-3 border border-[#00FFAA] text-[#00FFAA] rounded-full hover:bg-[#00FFAA] hover:text-black transition-all">
             View Pricing Plans
           </button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

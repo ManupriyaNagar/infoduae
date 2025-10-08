@@ -66,13 +66,13 @@ export default function UpLearn() {
         </div>
 
         {/* Curriculum */}
-        <div className="max-w-3xl mx-auto mb-16">
-          <h3 className="text-2xl font-semibold mb-4 text-[#00FFAA]">What You’ll Learn</h3>
-          <p className="text-gray-300 leading-relaxed mb-6">
+        <div className="max-w-7xl mx-auto mb-16 p-8 bg-white">
+          <h3 className="text-2xl font-semibold mb-4 text-black">What You’ll Learn</h3>
+          <p className="text-gray-800 leading-relaxed mb-6">
             Gain in-depth knowledge from fundamentals to advanced strategies through live examples and real trading
             insights.
           </p>
-          <ul className="text-left text-gray-300 space-y-3 list-decimal list-inside">
+          <ul className="text-left text-gray-700 space-y-3 list-decimal list-inside">
             <li>Master proven technical analysis for buying and selling stocks.</li>
             <li>Learn trend and reversal indicators for consistent results.</li>
             <li>Identify trends and chart patterns to plan precise entries and exits.</li>
@@ -112,23 +112,23 @@ export default function UpLearn() {
         </div>
 
         {/* CTA */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-16">
+        {/* <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-16">
           <button className="px-8 py-3 bg-[#00FFAA] text-black font-semibold rounded-full hover:bg-white transition-all">
             Enroll Now
           </button>
           <button className="px-8 py-3 border border-[#00FFAA] text-[#00FFAA] rounded-full hover:bg-[#00FFAA] hover:text-black transition-all">
             Schedule Consultation
           </button>
-        </div>
+        </div> */}
 
         {/* FAQ */}
-        <div className="text-left max-w-3xl mx-auto">
-          <h3 className="text-2xl font-semibold mb-6 text-center text-[#00FFAA]">
+        <div className="bg-white text-black text-left max-w-7xl mx-auto p-10">
+          <h3 className="text-2xl font-semibold mb-6 text-center ]">
             Frequently Asked Questions
           </h3>
           {faqs.map((f, i) => (
             <div key={i} className="mb-6">
-              <h4 className="font-semibold text-white mb-2">{f.q}</h4>
+              <h4 className="font-semibold  mb-2">{f.q}</h4>
               <p className="text-gray-400">{f.a}</p>
             </div>
           ))}

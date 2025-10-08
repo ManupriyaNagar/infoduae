@@ -35,11 +35,11 @@ export default function ContactPage() {
       </div>
 
       {/* Contact Section */}
-      <section className="container mx-auto px-4 py-16 flex flex-col md:flex-row bg-white rounded-lg -mt-20 relative z-10">
+      <section className="container mx-auto px-4 py-16 flex flex-col md:flex-row bg-black text-white rounded-lg -mt-20 relative z-10">
         {/* Left - Contact Info */}
         <div className="md:w-1/2 p-6 md:p-10 border-b md:border-b-0 md:border-r border-gray-200">
           <h2 className="text-2xl font-semibold mb-6">Get in touch</h2>
-          <p className="text-gray-600 mb-8">
+          <p className="text-gray-200 mb-8">
             Reach out to us for any inquiries, collaborations, or support. We’re
             here to help you make informed decisions.
           </p>
@@ -48,15 +48,15 @@ export default function ContactPage() {
             <div className="flex items-start gap-4">
               <MapPin className="text-[#00FFAA] w-6 h-6" />
               <div>
-                <h4 className="font-semibold text-gray-800">Head Office</h4>
-                <p className="text-gray-600">
+                <h4 className="font-semibold text-gray-200">Head Office</h4>
+                <p className="text-gray-300">
                   OPAL TOWER
 
-No-703, 7th Floor, Burj Khalifa Street
+                  No-703, 7th Floor, Burj Khalifa Street
 
-Business Bay
+                  Business Bay
 
-Dubai
+                  Dubai
                 </p>
               </div>
             </div>
@@ -64,16 +64,16 @@ Dubai
             <div className="flex items-start gap-4">
               <Mail className="text-[#00FFAA] w-6 h-6" />
               <div>
-                <h4 className="font-semibold text-gray-800">Email Us</h4>
-                <p className="text-gray-600">support@infod.com</p>
+                <h4 className="font-semibold text-gray-200">Email Us</h4>
+                <p className="text-gray-300">support@infod.com</p>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
               <Phone className="text-[#00FFAA] w-6 h-6" />
               <div>
-                <h4 className="font-semibold text-gray-800">Call Us</h4>
-                <p className="text-gray-600">+971 56 859 1870</p>
+                <h4 className="font-semibold text-gray-200">Call Us</h4>
+                <p className="text-gray-300">+971 56 859 1870</p>
               </div>
             </div>
           </div>

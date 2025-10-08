@@ -37,7 +37,7 @@ function createTextTexture(gl, text, font = 'bold 30px monospace', color = 'blac
   context.textBaseline = 'middle';
   context.textAlign = 'center';
   context.clearRect(0, 0, canvas.width, canvas.height);
-  context.fillText(text, canvas.width / 2, canvas.height / 2);
+  // context.fillText(text, canvas.width / 6, canvas.height / 2);
   const texture = new Texture(gl, { generateMipmaps: false });
   texture.image = canvas;
   return { texture, width: canvas.width, height: canvas.height };
@@ -358,7 +358,7 @@ class App {
         renderer: this.renderer,
         scene: this.scene,
         screen: this.screen,
-        // text: data.text,
+        text: data.text,
         viewport: this.viewport,
         bend,
         textColor,
@@ -405,7 +405,7 @@ class App {
     });
     const fov = (this.camera.fov * Math.PI) / 180;
     const height = 2 * Math.tan(fov / 2) * this.camera.position.z;
-    const width = height * this.camera.aspect;
+    const width = 2 * height * this.camera.aspect;
     this.viewport = { width, height };
     if (this.medias) {
       this.medias.forEach(media => media.onResize({ screen: this.screen, viewport: this.viewport }));
@@ -456,7 +456,7 @@ class App {
 
 export default function CircularGallery({
   items,
-  bend = 5,
+  bend = 3,
   // textColor = '#ffffff',
   borderRadius = 0.02,
   font = 'bold 30px Figtree',

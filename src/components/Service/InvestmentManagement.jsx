@@ -12,7 +12,7 @@ export default function InvestmentManagementDark() {
           <h1 className="text-3xl md:text-5xl font-semibold leading-tight mb-4">
             Comprehensive Investment <br /> & Fund Management Solutions
           </h1>
-          <p className="text-gray-400 mb-6">
+          <p className="text-gray-200 mb-6">
             At <span className="font-semibold text-[#00FFAA]">InfoD</span>, we deliver end-to-end fund management solutions designed to navigate complex markets confidently. Our experts combine data-driven insights with strategic planning to ensure your portfolio thrives in all conditions.
           </p>
           <div className="flex flex-wrap gap-8 mt-8">
@@ -48,17 +48,17 @@ export default function InvestmentManagementDark() {
       </div>
 
       {/* Professional Forex Fund Management */}
-      <div className="bg-black py-20 ">
+      <div className="bg-white text-black py-20 ">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-[#00FFAA]">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-black text-[#00FFAA]">
             Professional Forex Fund Management
           </h2>
-          <p className="text-gray-400 max-w-3xl mx-auto mb-8">
+          <p className="text-gray-800 max-w-3xl mx-auto mb-8">
             InfoD provides tailored Forex Fund Management for investors, corporates, and retail clients in Currency, Commodity, and Crypto markets. Our goal: consistent, low-risk performance with capital protection.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
-            <div className="bg-[#111111] p-8 rounded-2xl shadow-md border border-gray-800">
+            <div className="bg-[#000000] p-8 rounded-2xl shadow-md border border-gray-800">
               <h4 className="font-semibold mb-2 text-[#00FFAA]">Risk Strategy</h4>
               <p className="text-gray-400 text-sm">
                 Capped at 2% per trade with fixed stop-loss and 1:2–1:3 risk-reward. Maximum drawdown limited to 20%.
@@ -129,9 +129,9 @@ export default function InvestmentManagementDark() {
       </div>
 
       {/* Personalized Investment Services */}
-      <div className="bg-black py-20 ">
+      <div className="bg-white py-20 ">
         <div className="container mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-[#00FFAA]">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-black text-[#00FFAA]">
             Tailored Investment Solutions
           </h2>
           <p className="text-gray-400 max-w-3xl mx-auto">
@@ -148,7 +148,7 @@ export default function InvestmentManagementDark() {
             },
             {
               title: "Diverse Asset Management",
-              desc: "Equities, bonds, real estate, and crypto — a multi-asset approach to balance risk and maximize returns.",
+              desc: "Equities, bonds, real estate, and crypto a multi-asset approach to balance risk and maximize returns.",
               items: ["Global diversification", "Alternative investments", "Multi-asset portfolios"],
             },
             {
@@ -170,9 +170,6 @@ export default function InvestmentManagementDark() {
                   <li key={idx}>✔ {item}</li>
                 ))}
               </ul>
-              <button className="px-6 py-2 bg-[#00FFAA] text-black rounded-full text-sm hover:bg-[#00d488] transition">
-                Learn More
-              </button>
             </div>
           ))}
         </div>
