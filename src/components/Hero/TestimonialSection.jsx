@@ -39,6 +39,36 @@ const testimonials = [
     name: "Sophia L., Forex Enthusiast – Singapore",
     title: "Next-generation trading made simple",
   },
+  {
+    quote:
+      "I’ve been using BKM Global’s investment management service for over a year now. Their strategies are consistent, and the communication is excellent. I receive timely market alerts that actually help me make smarter investment decisions.",
+    name: "Amira K., Investor – Dubai",
+    title: "Reliable and trustworthy investment management",
+  },
+  {
+    quote:
+      "Their Uplearn concept is amazing — I’ve learned so much about forex strategies and market analysis. The team genuinely wants traders to succeed and not just trade blindly. I highly recommend BKM Global for anyone serious about trading.",
+    name: "Rahul S., Beginner Trader – Bengaluru",
+    title: "Best place to learn and grow as a trader",
+  },
+  {
+    quote:
+      "The platform is clean, intuitive, and built with real traders in mind. None match the speed and accuracy of BKM Global’s software. The referral system is also a great bonus!",
+    name: "Fatima Z., Fund Manager – UAE",
+    title: "Transparent, user-friendly, and profitable",
+  },
+  {
+    quote:
+      "The support team is responsive and knowledgeable. They guided me through setting up my first strategy on the algo software, and everything has been smooth since. Their risk management approach makes me feel secure.",
+    name: "Vikram N., Investor – India",
+    title: "Excellent customer support and guidance",
+  },
+  {
+    quote:
+      "BKM Global’s approach combines technology, education, and strategy perfectly. Their market alerts and risk management tools help me stay ahead of the curve. It’s not just a trading platform — it’s a complete ecosystem.",
+    name: "Sophia L., Forex Enthusiast – Singapore",
+    title: "Next-generation trading made simple",
+  },
 ];
 
 export default function TestimonialSection() {

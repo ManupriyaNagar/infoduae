@@ -6,33 +6,33 @@ export default function InvestmentManagementDark() {
       {/* Hero Section */}
       <div className="container mx-auto  py-20 grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h3 className="text-[#00FFAA] font-medium mb-2">
+          <h3 className="text-green-600 font-medium mb-2">
             Professional Fund Management
           </h3>
           <h1 className="text-3xl md:text-5xl font-semibold leading-tight mb-4">
             Comprehensive Investment <br /> & Fund Management Solutions
           </h1>
           <p className="text-gray-200 mb-6">
-            At <span className="font-semibold text-[#00FFAA]">InfoD</span>, we deliver end-to-end fund management solutions designed to navigate complex markets confidently. Our experts combine data-driven insights with strategic planning to ensure your portfolio thrives in all conditions.
+            At <span className="font-semibold text-green-600">InfoD</span>, we deliver end-to-end fund management solutions designed to navigate complex markets confidently. Our experts combine data-driven insights with strategic planning to ensure your portfolio thrives in all conditions.
           </p>
           <div className="flex flex-wrap gap-8 mt-8">
             <div>
-              <h4 className="text-3xl font-bold text-[#00FFAA]">10M+</h4>
+              <h4 className="text-3xl font-bold text-green-600">10M+</h4>
               <p className="text-sm text-gray-400">Assets Managed</p>
             </div>
             <div>
-              <h4 className="text-3xl font-bold text-[#00FFAA]">16+</h4>
+              <h4 className="text-3xl font-bold text-green-600">16+</h4>
               <p className="text-sm text-gray-400">Years Experience</p>
             </div>
             <div>
-              <h4 className="text-3xl font-bold text-[#00FFAA]">1000+</h4>
+              <h4 className="text-3xl font-bold text-green-600">1000+</h4>
               <p className="text-sm text-gray-400">Clients Served</p>
             </div>
           </div>
         </div>
 
         <div className="bg-[#111111] shadow-xl rounded-3xl p-10 border border-gray-800">
-          <h3 className="text-2xl font-semibold mb-4 text-[#00FFAA]">
+          <h3 className="text-2xl font-semibold mb-4 text-green-600">
             Our Investment Services
           </h3>
           <p className="text-gray-400 mb-6">
@@ -50,7 +50,7 @@ export default function InvestmentManagementDark() {
       {/* Professional Forex Fund Management */}
       <div className="bg-white text-black py-20 ">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-black text-[#00FFAA]">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-black text-green-600">
             Professional Forex Fund Management
           </h2>
           <p className="text-gray-800 max-w-3xl mx-auto mb-8">
@@ -58,21 +58,21 @@ export default function InvestmentManagementDark() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
-            <div className="bg-[#000000] p-8 rounded-2xl shadow-md border border-gray-800">
-              <h4 className="font-semibold mb-2 text-[#00FFAA]">Risk Strategy</h4>
-              <p className="text-gray-400 text-sm">
+            <div className=" p-8 rounded-2xl shadow-md border border-gray-800">
+              <h4 className="font-semibold mb-2 text-green-600">Risk Strategy</h4>
+              <p className="text-gray-900 text-sm">
                 Capped at 2% per trade with fixed stop-loss and 1:2–1:3 risk-reward. Maximum drawdown limited to 20%.
               </p>
             </div>
-            <div className="bg-[#111111] p-8 rounded-2xl shadow-md border border-gray-800">
-              <h4 className="font-semibold mb-2 text-[#00FFAA]">Investment Terms</h4>
-              <p className="text-gray-400 text-sm">
+            <div className=" p-8 rounded-2xl shadow-md border border-gray-800">
+              <h4 className="font-semibold mb-2 text-green-600">Investment Terms</h4>
+              <p className="text-gray-900 text-sm">
                 Minimum investment: <strong>$10,000</strong>. Expected annual return: up to <strong>60%</strong>.
               </p>
             </div>
-            <div className="bg-[#111111] p-8 rounded-2xl shadow-md border border-gray-800">
-              <h4 className="font-semibold mb-2 text-[#00FFAA]">Fee Structure</h4>
-              <p className="text-gray-400 text-sm">
+            <div className=" p-8 rounded-2xl shadow-md border border-gray-800">
+              <h4 className="font-semibold mb-2 text-green-600">Fee Structure</h4>
+              <p className="text-gray-900 text-sm">
                 No management fee. Profit-sharing model: <strong>50% on profits only</strong>.
               </p>
             </div>
@@ -81,45 +81,45 @@ export default function InvestmentManagementDark() {
       </div>
 
       {/* Importance of Investment Management */}
-      <div className="container mx-auto  py-20 text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-[#00FFAA]">
+      <div className=" bg-white py-20 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-green-600">
           Why Investment Management Matters
         </h2>
         <p className="text-gray-400 max-w-3xl mx-auto mb-16">
           We apply data-driven precision to manage your investments, ensuring steady growth and resilience in volatile markets.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8 text-left">
-          <div className="bg-[#111111] p-8 rounded-2xl shadow-md border border-gray-800">
-            <h4 className="text-xl font-semibold mb-3 text-[#00FFAA]">Maximizing Returns</h4>
-            <p className="text-gray-400 text-sm mb-4">
+        <div className="grid md:grid-cols-3 gap-8 text-left container mx-auto ">
+          <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-800">
+            <h4 className="text-xl font-semibold mb-3 text-green-600">Maximizing Returns</h4>
+            <p className="text-gray-900 text-sm mb-4">
               Optimize performance through in-depth market analysis and adaptive strategies.
             </p>
-            <ul className="text-sm text-gray-400 space-y-2">
+            <ul className="text-sm text-gray-900 space-y-2">
               <li>✔ Advanced market insights</li>
               <li>✔ Data-driven decisions</li>
               <li>✔ Continuous optimization</li>
             </ul>
           </div>
 
-          <div className="bg-[#111111] p-8 rounded-2xl shadow-md border border-gray-800">
-            <h4 className="text-xl font-semibold mb-3 text-[#00FFAA]">Risk Mitigation</h4>
-            <p className="text-gray-400 text-sm mb-4">
+          <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-800">
+            <h4 className="text-xl font-semibold mb-3 text-green-600">Risk Mitigation</h4>
+            <p className="text-gray-900 text-sm mb-4">
               Protect investments from market volatility with proactive risk strategies.
             </p>
-            <ul className="text-sm text-gray-400 space-y-2">
+            <ul className="text-sm text-gray-900 space-y-2">
               <li>✔ Real-time risk tracking</li>
               <li>✔ Diversified portfolios</li>
               <li>✔ Market resilience</li>
             </ul>
           </div>
 
-          <div className="bg-[#111111] p-8 rounded-2xl shadow-md border border-gray-800">
-            <h4 className="text-xl font-semibold mb-3 text-[#00FFAA]">Liquidity Management</h4>
-            <p className="text-gray-400 text-sm mb-4">
+          <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-800">
+            <h4 className="text-xl font-semibold mb-3 text-green-600">Liquidity Management</h4>
+            <p className="text-gray-900 text-sm mb-4">
               Ensure accessible funds without compromising long-term growth opportunities.
             </p>
-            <ul className="text-sm text-gray-400 space-y-2">
+            <ul className="text-sm text-gray-900 space-y-2">
               <li>✔ Optimal asset allocation</li>
               <li>✔ Flexible withdrawals</li>
               <li>✔ Emergency fund access</li>
@@ -131,10 +131,10 @@ export default function InvestmentManagementDark() {
       {/* Personalized Investment Services */}
       <div className="bg-white py-20 ">
         <div className="container mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-black text-[#00FFAA]">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-black text-green-600">
             Tailored Investment Solutions
           </h2>
-          <p className="text-gray-400 max-w-3xl mx-auto">
+          <p className="text-gray-900 max-w-3xl mx-auto">
             Innovative strategies crafted to help you achieve financial freedom with clarity, security, and transparency.
           </p>
         </div>
@@ -162,10 +162,10 @@ export default function InvestmentManagementDark() {
               items: ["Detailed analytics", "Periodic insights", "24/7 support"],
             },
           ].map((service, i) => (
-            <div key={i} className="bg-[#111111] p-10 rounded-3xl shadow-md border border-gray-800 text-left">
-              <h3 className="text-xl font-semibold mb-3 text-[#00FFAA]">{service.title}</h3>
-              <p className="text-gray-400 text-sm mb-4">{service.desc}</p>
-              <ul className="text-gray-400 text-sm space-y-2 mb-6">
+            <div key={i} className="bg-white p-10 rounded-3xl shadow-md border border-gray-800 text-left">
+              <h3 className="text-xl font-semibold mb-3 text-green-600">{service.title}</h3>
+              <p className="text-gray-900 text-sm mb-4">{service.desc}</p>
+              <ul className="text-gray-900 text-sm space-y-2 mb-6">
                 {service.items.map((item, idx) => (
                   <li key={idx}>✔ {item}</li>
                 ))}
