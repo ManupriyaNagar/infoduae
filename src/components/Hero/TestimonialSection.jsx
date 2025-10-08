@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import { FaStar, FaJenkins } from "react-icons/fa";
 
 const testimonials = [
@@ -41,21 +42,19 @@ const testimonials = [
 ];
 
 export default function TestimonialSection() {
+  const [index, setIndex] = useState(0); // Start from first slide
+  const visibleCount = 4; // Number of cards visible at a time
 
-    const [activeIndex, setActiveIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % testimonials.length); // loop
+    }, 5000); // every 5 seconds
 
-  const handleDotClick = (index) => {
-    setActiveIndex(index);
-  };
+    return () => clearInterval(interval);
+  }, []);
 
-  const itemsPerPage = 1; // For mobile view, show 1 card at a time
-  const startIndex = activeIndex * itemsPerPage;
-  const visibleTestimonials = testimonials.slice(
-    startIndex,
-    startIndex + itemsPerPage
-  );
   return (
-    <section className="relative bg-gray-100 py-12 px-4 sm:px-6">
+    <section className="relative bg-gray-100 py-12 px-4 sm:px-6 overflow-hidden">
       <div className="container mx-auto">
         {/* Heading */}
         <div className="text-center mb-10">
@@ -67,10 +66,17 @@ export default function TestimonialSection() {
           </p>
         </div>
 
-        {/* Grid Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Rating Card */}
-          <div className="bg-white p-6 shadow-sm text-center rounded-xl flex flex-col justify-between">
+        {/* Carousel Container */}
+        <div className="relative overflow-hidden">
+          
+          <div
+            className="flex transition-transform duration-1000"
+            style={{
+              transform: `translateX(-${(index * 100) / visibleCount}%)`,
+              width: `${(testimonials.length * 100) / visibleCount}%`,
+            }}
+          >
+               <div className="bg-white max-w-[50vh] p-6 shadow-sm text-center  flex flex-col justify-between">
             <div>
               <p className="text-5xl font-bold text-gray-400">4.9</p>
               <div className="flex justify-center my-2">
@@ -86,36 +92,36 @@ export default function TestimonialSection() {
               <FaJenkins className="text-4xl" />
             </div>
           </div>
-
-          {/* Testimonial Cards */}
-          {testimonials.map((t, i) => (
-            <div
-              key={i}
-              className="bg-white p-6 shadow-sm rounded-xl flex flex-col justify-between"
-            >
-              <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
-                {t.quote}
-              </p>
-              <div className="flex items-center mt-4">
-                <div>
-                  <p className="font-bold text-gray-900 text-sm sm:text-base">
-                    {t.name}
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-500">{t.title}</p>
+            {testimonials.map((t, i) => (
+              <div
+                key={i}
+                className="bg-white p-6 shadow-sm  flex-shrink-0 flex flex-col justify-between"
+                style={{ width: `${100 / testimonials.length}%` }}
+              >
+                <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
+                  {t.quote}
+                </p>
+                <div className="flex items-center mt-4">
+                  <div>
+                    <p className="font-bold text-gray-900 text-sm sm:text-base">
+                      {t.name}
+                    </p>
+                    <p className="text-xs sm:text-sm text-gray-500">{t.title}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Dots */}
-          <div className="flex justify-center mt-10 space-x-2">
-          {Array.from({ length: testimonials.length }).map((_, i) => (
+        <div className="flex justify-center mt-10 space-x-2">
+          {Array.from({ length: testimonials.length -2 }).map((_, i) => (
             <button
               key={i}
-              onClick={() => handleDotClick(i)}
+              onClick={() => setIndex(i)}
               className={`w-3 h-3 rounded-full transition-all ${
-                activeIndex === i ? "bg-gray-800" : "bg-gray-300"
+                index === i ? "bg-gray-800" : "bg-gray-300"
               }`}
             ></button>
           ))}
