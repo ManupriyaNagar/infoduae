@@ -12,6 +12,9 @@ export default function ContactPage() {
     message: "",
   });
 
+  // New state for form submission success
+  const [submitted, setSubmitted] = useState(false);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -19,6 +22,20 @@ export default function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+
+    // Here you would send data to your backend API
+    // For now, just mark as submitted
+    setSubmitted(true);
+
+    // Optionally reset the form
+    setFormData({
+      name: "",
+      company: "",
+      phone: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
   };
 
   return (
@@ -49,15 +66,22 @@ export default function ContactPage() {
               <MapPin className="text-[#00FFAA] w-6 h-6" />
               <div>
                 <h4 className="font-semibold text-gray-200">Head Office</h4>
-                <p className="text-gray-300">
-                  OPAL TOWER
-
-                  No-703, 7th Floor, Burj Khalifa Street
-
-                  Business Bay
-
-                  Dubai
-                </p>
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=OPAL+TOWER,+No-703,+7th+Floor,+Burj+Khalifa+Street,+Business+Bay,+Dubai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-[#00FFAA] transition-colors"
+                >
+                  <p>
+                    OPAL TOWER
+                    <br />
+                    No-703, 7th Floor, Burj Khalifa Street
+                    <br />
+                    Business Bay
+                    <br />
+                    Dubai
+                  </p>
+                </a>
               </div>
             </div>
 
@@ -65,7 +89,12 @@ export default function ContactPage() {
               <Mail className="text-[#00FFAA] w-6 h-6" />
               <div>
                 <h4 className="font-semibold text-gray-200">Email Us</h4>
-                <p className="text-gray-300">support@infod.com</p>
+                <a 
+                  href="mailto:support@infod.com" 
+                  className="text-gray-300 hover:text-[#00FFAA] transition-colors"
+                >
+                  support@infod.com
+                </a>
               </div>
             </div>
 
@@ -73,28 +102,15 @@ export default function ContactPage() {
               <Phone className="text-[#00FFAA] w-6 h-6" />
               <div>
                 <h4 className="font-semibold text-gray-200">Call Us</h4>
-                <p className="text-gray-300">+971 56 859 1870</p>
+                <a 
+                  href="tel:+971568591870" 
+                  className="text-gray-300 hover:text-[#00FFAA] transition-colors"
+                >
+                  +971 56 859 1870
+                </a>
               </div>
             </div>
           </div>
-
-          {/* <div className="mt-8">
-            <h4 className="font-semibold text-gray-800 mb-2">Follow us</h4>
-            <div className="flex gap-4 text-gray-500 text-xl">
-              <a href="#" className="hover:text-[#00FFAA]">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="hover:text-[#00FFAA]">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="hover:text-[#00FFAA]">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="hover:text-[#00FFAA]">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div> */}
         </div>
 
         {/* Right - Contact Form */}
@@ -108,6 +124,8 @@ export default function ContactPage() {
                 placeholder="Name"
                 className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-[#00FFAA]"
                 onChange={handleChange}
+                value={formData.name}
+                required
               />
               <input
                 type="text"
@@ -115,6 +133,7 @@ export default function ContactPage() {
                 placeholder="Company"
                 className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-[#00FFAA]"
                 onChange={handleChange}
+                value={formData.company}
               />
             </div>
 
@@ -125,6 +144,7 @@ export default function ContactPage() {
                 placeholder="Phone"
                 className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-[#00FFAA]"
                 onChange={handleChange}
+                value={formData.phone}
               />
               <input
                 type="email"
@@ -132,6 +152,8 @@ export default function ContactPage() {
                 placeholder="Email"
                 className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-[#00FFAA]"
                 onChange={handleChange}
+                value={formData.email}
+                required
               />
             </div>
 
@@ -141,6 +163,8 @@ export default function ContactPage() {
               placeholder="Subject"
               className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-[#00FFAA]"
               onChange={handleChange}
+              value={formData.subject}
+              required
             />
             <textarea
               name="message"
@@ -148,6 +172,8 @@ export default function ContactPage() {
               rows="5"
               className="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-[#00FFAA]"
               onChange={handleChange}
+              value={formData.message}
+              required
             ></textarea>
 
             <button
@@ -157,13 +183,29 @@ export default function ContactPage() {
               Send
             </button>
           </form>
+          
+          {/* Success Message */}
+          {submitted && (
+            <div className="mt-6 p-4 bg-green-100 text-green-800 rounded-lg">
+              <p className="font-semibold">Thank you!</p>
+              <p>Your message has been sent successfully.</p>
+              <div className="mt-2 text-sm">
+                <p><strong>Name:</strong> {formData.name}</p>
+                <p><strong>Company:</strong> {formData.company}</p>
+                <p><strong>Phone:</strong> {formData.phone}</p>
+                <p><strong>Email:</strong> {formData.email}</p>
+                <p><strong>Subject:</strong> {formData.subject}</p>
+                <p><strong>Message:</strong> {formData.message}</p>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
       {/* Google Map */}
       <div className="w-full h-[400px] mt-10">
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.5171202945094!2d55.27302957571063!3d25.185777732162578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69fde4a356f5%3A0x90c323502027a8c1!2sOpal%20Tower!5e0!3m2!1sen!2sin!4v1759917787365!5m2!1sen!2sin" 
-          width="100%" height="100%" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   );
