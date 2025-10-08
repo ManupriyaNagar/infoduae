@@ -162,14 +162,8 @@ export default function ContactPage() {
 
       {/* Google Map */}
       <div className="w-full h-[400px] mt-10">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1993171797563!2d77.61682867514487!3d12.936511187375202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae146ce72ff2ff%3A0x72d4c4d7c08c3a48!2sKoramangala%207th%20Block!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-        ></iframe>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.5171202945094!2d55.27302957571063!3d25.185777732162578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69fde4a356f5%3A0x90c323502027a8c1!2sOpal%20Tower!5e0!3m2!1sen!2sin!4v1759917787365!5m2!1sen!2sin" 
+          width="100%" height="100%" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   );

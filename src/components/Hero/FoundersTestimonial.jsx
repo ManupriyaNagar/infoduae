@@ -56,7 +56,7 @@ export default function FounderTestimonials() {
         {testimonials.map((item, index) => (
           <div
             key={index}
-            className="text-left border border-gray-300 p-6 rounded-2xl  hover:bg-gray-200 transition"
+            className="text-left border border-gray-300 p-6 rounded-2xl  hover:bg-gray-100 transition"
           >
             <div className="mt-2">
               <div className="text-2xl font-semibold text-gray-900 mb-3">

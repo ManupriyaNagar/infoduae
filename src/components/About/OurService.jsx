@@ -2,14 +2,14 @@
 
 export default function OurServices() {
   return (
-    <section className="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-800 py-20 px-6 md:px-20 font-sans">
+    <section className="bg-black text-gray-800 py-20 px-6 md:px-20 font-sans">
       <div className="container mx-auto text-center">
         {/* Section Title */}
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#00FFAA] ">
           Our Services
         </h2>
-        <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto mt-4">
-          At <span className="font-semibold text-indigo-700">InfoD</span>, we empower individuals and businesses 
+        <p className="text-gray-200 text-base md:text-lg max-w-2xl mx-auto mt-4">
+          At <span className="font-semibold text-[#00FFAA] ">InfoD</span>, we empower individuals and businesses 
           with data-driven financial insights, helping them stay ahead in a rapidly evolving market.
         </p>
 
@@ -60,7 +60,7 @@ export default function OurServices() {
           </h3>
           <div className="space-y-4">
             <p className="text-gray-600 text-base leading-relaxed">
-              At <span className="font-semibold text-indigo-700">InfoD</span>, your growth is our mission. 
+              At <span className="font-semibold text-[#00FFAA]">InfoD</span>, your growth is our mission. 
               We believe our success is built on the trust and satisfaction of our clients. 
               That's why we focus on fostering lasting relationships grounded in transparency, 
               collaboration, and integrity.  

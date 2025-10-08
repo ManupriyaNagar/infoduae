@@ -16,8 +16,7 @@ export default function AboutJourney() {
           </div>
           <div className="flex-1 text-gray-600 text-xl leading-relaxed">
             <p>
-              Founded by data experts, we create cutting-edge SaaS analytics
-              platforms tailored for businesses of all sizes.
+             Built by data and trading specialists, Infod provides intelligent, AI-driven trading platforms that simplify complex financial decisions and maximize market opportunities.
             </p>
           </div>
         </div>
@@ -25,7 +24,7 @@ export default function AboutJourney() {
         {/* Image */}
         <div className="w-full overflow-hidden rounded-xl">
           <img
-            src="https://as2.ftcdn.net/v2/jpg/02/37/32/33/1000_F_237323398_ols6gcwYZtiA0mgY2z3lUIHL0V6UXQZC.jpg" // replace with your image
+            src="https://i.pinimg.com/736x/10/9e/e3/109ee385971d50218b28256a0073873c.jpg" // replace with your image
             alt="Our Team"
             width={1200}
             height={600}
@@ -39,14 +38,10 @@ export default function AboutJourney() {
         <div className="flex flex-col md:flex-row justify-between items-start mb-8">
           <div className="flex-1 mb-8 md:mb-0">
             <h3 className="text-2xl md:text-3xl font-semibold mb-4">
-              We are passionate about empowering individuals and businesses to
-              take control of their finances and achieve their financial goals.
+              At Infod, we are passionate about empowering traders and investors to take control of their financial strategies and unlock their full market potential.
             </h3>
             <p className="text-gray-600 leading-relaxed text-base">
-              We are dedicated to revolutionizing the way individuals and
-              businesses manage their finances. Our team is committed to
-              providing intuitive and innovative solutions that empower our
-              users to achieve financial success.
+             We are dedicated to transforming the way individuals and businesses trade and manage investments. Our AI-driven, data-backed solutions provide intuitive, precise, and innovative tools that help users achieve consistent financial growth and success.
             </p>
           </div>
 

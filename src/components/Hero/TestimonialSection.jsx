@@ -64,7 +64,7 @@ export default function TestimonialSection() {
                 {Array(5)
                   .fill(null)
                   .map((_, i) => (
-                    <FaStar key={i} className="text-red-500" />
+                    <FaStar key={i} className="text-green-500" />
                   ))}
               </div>
               <p className="text-sm text-gray-500">200+ reviews</p>
