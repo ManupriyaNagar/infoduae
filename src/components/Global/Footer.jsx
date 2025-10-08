@@ -115,10 +115,10 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-4 justify-center md:justify-end w-full md:w-1/3">
-            <a href="#" className="hover:text-white transition">
+            <a href="/privacy-policy" className="hover:text-white transition">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-white transition">
+            <a href="/terms-condition" className="hover:text-white transition">
               Terms & Conditions
             </a>
           </div>

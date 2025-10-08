@@ -1,10 +1,13 @@
 import React from 'react';
-import { metadata } from '../layout';
+
 import InvestmentManagement from '@/components/Service/InvestmentManagement';
 import MarketAlerts from '@/components/Service/MarketAlerts';
 import UpLearn from '@/components/Service/Uplearn';
 
-
+export const metadata = {
+    title: "Services | infod",
+    description: "Explore our services to help you achieve your financial goals.",
+};
 
 const Service = () => {
     return (
