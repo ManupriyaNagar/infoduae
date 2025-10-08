@@ -46,7 +46,7 @@ export default function WhyTradersPrefer() {
           viewport={{ once: true }}
           className="text-3xl md:text-6xl font-bold text-center mb-12 text-gray-900"
         >
-          Why Traders Prefer <span className="text-green-600">infod</span>
+          Why Traders Prefer <span className="text-transparent bg-gradient-to-r from-[#00FFAA] to-[#00BFA6] bg-clip-text">infod</span>
         </motion.h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -59,7 +59,7 @@ export default function WhyTradersPrefer() {
               viewport={{ once: true }}
               className="bg-white transition-all p-6 border border-gray-100"
             >
-              <feature.icon className="w-10 h-10 text-green-600 mb-4" />
+              <feature.icon className="w-10 h-10 text-[#00BFA6]  mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
               <p className="text-gray-600 text-lg leading-relaxed">{feature.description}</p>
             </motion.div>

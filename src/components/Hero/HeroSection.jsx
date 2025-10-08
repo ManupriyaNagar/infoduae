@@ -68,7 +68,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.2 }}
-          className="w-full lg:w-2/5 text-left lg:text-right"
+          className="w-full lg:w-2/5 text-left "
         >
           <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_#00FFAA25] transition-all duration-300">
             <h3 className="text-2xl font-semibold mb-4 text-[#00FFAA]">
@@ -76,7 +76,7 @@ const HeroSection = () => {
             </h3>
             <p className="text-gray-300 leading-relaxed text-lg">
               Founded in Dubai, infod is redefining the way the world trades. Since our inception, we’ve been dedicated to creating innovative, data-driven trading platforms that merge technology, intelligence, and precision. <br />
-              Experience seamless automation — where human insight meets algorithmic excellence.
+              Experience seamless automation where human insight meets algorithmic excellence.
             </p>
           </div>
 

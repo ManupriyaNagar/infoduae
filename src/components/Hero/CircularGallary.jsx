@@ -358,7 +358,7 @@ class App {
         renderer: this.renderer,
         scene: this.scene,
         screen: this.screen,
-        text: data.text,
+        // text: data.text,
         viewport: this.viewport,
         bend,
         textColor,
@@ -456,19 +456,19 @@ class App {
 
 export default function CircularGallery({
   items,
-  bend = 3,
-  textColor = '#ffffff',
-  borderRadius = 0.05,
+  bend = 5,
+  // textColor = '#ffffff',
+  borderRadius = 0.02,
   font = 'bold 30px Figtree',
   scrollSpeed = 2,
   scrollEase = 0.05
 }) {
   const containerRef = useRef(null);
   useEffect(() => {
-    const app = new App(containerRef.current, { items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase });
+    const app = new App(containerRef.current, { items, bend, borderRadius, font, scrollSpeed, scrollEase });
     return () => {
       app.destroy();
     };
-  }, [items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase]);
-  return <div className="relative bg-white w-full h-full overflow-hidden cursor-grab active:cursor-grabbing" ref={containerRef} />;
+  }, [items, bend,  borderRadius, font, scrollSpeed, scrollEase]);
+  return <div className="relative bg-black w-full h-full overflow-hidden cursor-grab active:cursor-grabbing" ref={containerRef} />;
 }

@@ -30,7 +30,7 @@ export default function FounderTestimonials() {
         <div className="md:max-w-[40%]">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 md:mb-12">
             Infod:{" "}
-            <span className="text-gray-500">
+            <span className="text-transparent bg-gradient-to-r from-[#00FFAA] to-[#00BFA6] bg-clip-text">
               Intelligent Global Trading Solutions
             </span>
           </h1>
@@ -56,7 +56,7 @@ export default function FounderTestimonials() {
         {testimonials.map((item, index) => (
           <div
             key={index}
-            className="text-left border border-gray-300 p-6 rounded-2xl bg-gray-100 hover:bg-gray-200 transition"
+            className="text-left border border-gray-300 p-6 rounded-2xl bg-gradient-to-r from-[#00FFAA] to-[#00BFA6] hover:bg-gray-200 transition"
           >
             <div className="mt-2">
               <div className="text-2xl font-semibold text-gray-900 mb-3">

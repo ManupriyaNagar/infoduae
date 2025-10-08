@@ -15,7 +15,7 @@ export default function CurrencyMarketStrategies() {
           className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-2 md:mb-12 text-center"
         >
           Applying Strategies in the{" "}
-          <span className="text-[#00FFAA]">Currency Market</span>
+          <span className="text-transparent bg-gradient-to-r from-[#00FFAA] to-[#00BFA6] bg-clip-text">Currency Market</span>
         </motion.h2>
 
         {/* 3 Cards */}

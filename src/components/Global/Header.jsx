@@ -17,15 +17,15 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex bg-[#1a1a1a] rounded-full px-6 py-4 items-center gap-6 text-white text-lg">
-          <a href="#" className="hover:text-[#00FFAA] transition">Home</a>
-          <a href="#" className="hover:text-[#00FFAA] transition">About</a>
-          <a href="#" className="hover:text-[#00FFAA] transition">Service</a>
+          <a href="/" className="hover:text-[#00FFAA] transition">Home</a>
+          <a href="about" className="hover:text-[#00FFAA] transition">About</a>
+          <a href="/service" className="hover:text-[#00FFAA] transition">Service</a>
         </nav>
 
         {/* Desktop Contact Button */}
         <div className="hidden md:flex items-center">
           <a
-            href="#"
+            href="/contact"
             className="ml-4 bg-[#00FFAA] text-black px-6 py-2 rounded-full flex items-center gap-2 font-medium hover:bg-[#00FFAA]/80 transition"
           >
             Contact <ArrowRight size={18} />
@@ -67,7 +67,7 @@ export default function Header() {
           </a>
           <a
             href="#"
-            className="bg-[#00FFAA] text-black px-6 py-2 rounded-full flex items-center gap-2 font-medium hover:bg-[#00FFAA]/80 transition"
+            className="bg-gradient-to-r from-[#00FFAA] to-[#00BFA6]"
             onClick={() => setMenuOpen(false)}
           >
             Contact <ArrowRight size={18} />
