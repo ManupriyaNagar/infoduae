@@ -1,104 +1,72 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { FaStar, FaJenkins } from "react-icons/fa";
+import { FaStar, FaDatabase } from "react-icons/fa";
 
 const testimonials = [
   {
     quote:
-      "BKM Global has transformed my trading experience. Their algo software is fast, precise, and incredibly efficient. I appreciate how transparent the platform is — I can monitor everything in real-time. It’s a refreshing change from other brokers I’ve used before.",
-    name: "Ramesh P., Independent Trader – India",
-    title: "A truly professional trading partner!",
+      "InfoD has completely streamlined our business analytics process. Their platform makes data insights easy to understand and act upon — saving us hours every week.",
+    name: "Rohit Sharma, Business Analyst – India",
+    title: "Simplified data management and insights",
   },
   {
     quote:
-      "I’ve been using BKM Global’s investment management service for over a year now. Their strategies are consistent, and the communication is excellent. I receive timely market alerts that actually help me make smarter investment decisions.",
-    name: "Amira K., Investor – Dubai",
-    title: "Reliable and trustworthy investment management",
+      "As a small business owner, InfoD’s financial dashboard has been a game-changer. I can now track performance, revenue trends, and customer data effortlessly in real-time.",
+    name: "Ananya Mehta, Founder – Delhi",
+    title: "Powerful insights for everyday decisions",
   },
   {
     quote:
-      "Their Uplearn concept is amazing — I’ve learned so much about forex strategies and market analysis. The team genuinely wants traders to succeed and not just trade blindly. I highly recommend BKM Global for anyone serious about trading.",
-    name: "Rahul S., Beginner Trader – Bengaluru",
-    title: "Best place to learn and grow as a trader",
+      "We implemented InfoD’s automation tools across multiple departments. The system is reliable, secure, and beautifully designed. It’s everything we needed for our growing team.",
+    name: "James Anderson, Operations Head – Singapore",
+    title: "Reliable and scalable automation platform",
   },
   {
     quote:
-      "The platform is clean, intuitive, and built with real traders in mind. None match the speed and accuracy of BKM Global’s software. The referral system is also a great bonus!",
-    name: "Fatima Z., Fund Manager – UAE",
-    title: "Transparent, user-friendly, and profitable",
+      "InfoD provides the clarity and transparency that our finance team needed. Reports that once took days are now ready in minutes. Highly recommend for data-driven organizations.",
+    name: "Priya Nair, Finance Manager – UAE",
+    title: "Data-driven decisions made simple",
   },
   {
     quote:
-      "The support team is responsive and knowledgeable. They guided me through setting up my first strategy on the algo software, and everything has been smooth since. Their risk management approach makes me feel secure.",
-    name: "Vikram N., Investor – India",
-    title: "Excellent customer support and guidance",
+      "The support team at InfoD is outstanding. They guided us through every setup step and customized dashboards exactly the way we wanted. Excellent experience overall!",
+    name: "Vikram Patel, CTO – India",
+    title: "Exceptional support and customization",
   },
   {
     quote:
-      "BKM Global’s approach combines technology, education, and strategy perfectly. Their market alerts and risk management tools help me stay ahead of the curve. It’s not just a trading platform — it’s a complete ecosystem.",
-    name: "Sophia L., Forex Enthusiast – Singapore",
-    title: "Next-generation trading made simple",
-  },
-  {
-    quote:
-      "I’ve been using BKM Global’s investment management service for over a year now. Their strategies are consistent, and the communication is excellent. I receive timely market alerts that actually help me make smarter investment decisions.",
-    name: "Amira K., Investor – Dubai",
-    title: "Reliable and trustworthy investment management",
-  },
-  {
-    quote:
-      "Their Uplearn concept is amazing — I’ve learned so much about forex strategies and market analysis. The team genuinely wants traders to succeed and not just trade blindly. I highly recommend BKM Global for anyone serious about trading.",
-    name: "Rahul S., Beginner Trader – Bengaluru",
-    title: "Best place to learn and grow as a trader",
-  },
-  {
-    quote:
-      "The platform is clean, intuitive, and built with real traders in mind. None match the speed and accuracy of BKM Global’s software. The referral system is also a great bonus!",
-    name: "Fatima Z., Fund Manager – UAE",
-    title: "Transparent, user-friendly, and profitable",
-  },
-  {
-    quote:
-      "The support team is responsive and knowledgeable. They guided me through setting up my first strategy on the algo software, and everything has been smooth since. Their risk management approach makes me feel secure.",
-    name: "Vikram N., Investor – India",
-    title: "Excellent customer support and guidance",
-  },
-  {
-    quote:
-      "BKM Global’s approach combines technology, education, and strategy perfectly. Their market alerts and risk management tools help me stay ahead of the curve. It’s not just a trading platform — it’s a complete ecosystem.",
-    name: "Sophia L., Forex Enthusiast – Singapore",
-    title: "Next-generation trading made simple",
+      "InfoD’s analytics suite has helped us identify market patterns and improve business forecasting accuracy. It’s not just a tool, it’s an intelligent partner for growth.",
+    name: "Sophia Lee, Data Strategist – Malaysia",
+    title: "Smart analytics for smarter business",
   },
 ];
 
 export default function TestimonialSection() {
-  const [index, setIndex] = useState(0); // Start from first slide
-  const visibleCount = 4; // Number of cards visible at a time
+  const [index, setIndex] = useState(0);
+  const visibleCount = 4;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % testimonials.length); // loop
-    }, 5000); // every 5 seconds
-
+      setIndex((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="relative bg-gray-100 py-12 px-4 sm:px-6 overflow-hidden">
+    <section className="relative bg-gray-50 py-12 px-4 sm:px-6 overflow-hidden">
       <div className="container mx-auto">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 leading-snug">
-            Find your best Support with us.
+            Hear from Our Valued Clients
           </h2>
           <p className="text-lg sm:text-2xl text-gray-600 font-semibold mt-3">
-            We guarantee your next success!
+            Empowering businesses through intelligent data solutions
           </p>
         </div>
 
-        {/* Carousel Container */}
+        {/* Carousel */}
         <div className="relative overflow-hidden">
-          
           <div
             className="flex transition-transform duration-1000"
             style={{
@@ -106,26 +74,27 @@ export default function TestimonialSection() {
               width: `${(testimonials.length * 100) / visibleCount}%`,
             }}
           >
-               <div className="bg-white max-w-[50vh] p-6 shadow-sm text-center  flex flex-col justify-between">
-            <div>
-              <p className="text-5xl font-bold text-gray-400">4.9</p>
-              <div className="flex justify-center my-2">
-                {Array(5)
-                  .fill(null)
-                  .map((_, i) => (
-                    <FaStar key={i} className="text-green-500" />
-                  ))}
+            <div className="bg-white max-w-[50vh] p-6 shadow-sm text-center flex flex-col justify-between">
+              <div>
+                <p className="text-5xl font-bold text-gray-400">4.9</p>
+                <div className="flex justify-center my-2">
+                  {Array(5)
+                    .fill(null)
+                    .map((_, i) => (
+                      <FaStar key={i} className="text-green-500" />
+                    ))}
+                </div>
+                <p className="text-sm text-gray-500">250+ verified reviews</p>
               </div>
-              <p className="text-sm text-gray-500">200+ reviews</p>
+              <div className="flex justify-center mt-4 opacity-80">
+                <FaDatabase className="text-4xl" />
+              </div>
             </div>
-            <div className="flex justify-center mt-4 opacity-80">
-              <FaJenkins className="text-4xl" />
-            </div>
-          </div>
+
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="bg-white p-6 shadow-sm  flex-shrink-0 flex flex-col justify-between"
+                className="bg-white p-6 shadow-sm flex-shrink-0 flex flex-col justify-between"
                 style={{ width: `${100 / testimonials.length}%` }}
               >
                 <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
@@ -146,7 +115,7 @@ export default function TestimonialSection() {
 
         {/* Dots */}
         <div className="flex justify-center mt-10 space-x-2">
-          {Array.from({ length: testimonials.length -2 }).map((_, i) => (
+          {Array.from({ length: testimonials.length - 2 }).map((_, i) => (
             <button
               key={i}
               onClick={() => setIndex(i)}
