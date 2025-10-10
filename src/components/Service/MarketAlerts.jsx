@@ -74,7 +74,7 @@ export default function MarketAlerts() {
           <h3 className="text-2xl font-semibold mb-4 ">What Are Market Alerts?</h3>
           <p className="text-gray-100 leading-relaxed">
             Market Alerts are real-time trading triggers derived from technical, algorithmic, and fundamental analysis.
-            At InfoD, we leverage intelligent systems and expert insight to deliver precise buy/sell opportunities that
+            At InfodD, we leverage intelligent systems and expert insight to deliver precise buy/sell opportunities that
             empower traders to act confidently in fast-moving markets.
           </p>
         </div>

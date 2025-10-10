@@ -12,7 +12,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-0">
         {/* Left Logo Section */}
         <div className="flex items-center gap-3">
-          <h1 className="text-white text-3xl md:text-4xl font-semibold">Infod</h1>
+          <h1 className="text-white text-3xl md:text-4xl font-semibold">InfodD</h1>
         </div>
 
         {/* Desktop Navigation */}

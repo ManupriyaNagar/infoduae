@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/Global/Header.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1760061349992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1760061365019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <header className=\"w-full bg-black sticky top-0 z-20\">\n       <div className=\"container mx-auto flex justify-between items-center py-4 px-4 md:px-0\">\n         {/* Left Logo Section */}\n         <div className=\"flex items-center gap-3\">\n-          <h1 className=\"text-white text-3xl md:text-4xl font-semibold\">infod2</h1>\n+          <h1 className=\"text-white text-3xl md:text-4xl font-semibold\">InfodD</h1>\n         </div>\n \n         {/* Desktop Navigation */}\n         <nav className=\"hidden md:flex bg-[#1a1a1a] rounded-full px-6 py-4 items-center gap-6 text-white text-lg\">\n"
+                }
+            ],
+            "date": 1760061349992,
+            "name": "Commit-0",
+            "content": "// app/components/Header.tsx\n\"use client\";\nimport { useState } from \"react\";\nimport { ChevronDown, ArrowRight, Menu, X } from \"lucide-react\";\nimport Image from \"next/image\";\n\nexport default function Header() {\n  const [menuOpen, setMenuOpen] = useState(false);\n\n  return (\n    <header className=\"w-full bg-black sticky top-0 z-20\">\n      <div className=\"container mx-auto flex justify-between items-center py-4 px-4 md:px-0\">\n        {/* Left Logo Section */}\n        <div className=\"flex items-center gap-3\">\n          <h1 className=\"text-white text-3xl md:text-4xl font-semibold\">infod2</h1>\n        </div>\n\n        {/* Desktop Navigation */}\n        <nav className=\"hidden md:flex bg-[#1a1a1a] rounded-full px-6 py-4 items-center gap-6 text-white text-lg\">\n          <a href=\"/\" className=\"hover:text-[#00FFAA] transition\">Home</a>\n          <a href=\"about\" className=\"hover:text-[#00FFAA] transition\">About</a>\n          <a href=\"/service\" className=\"hover:text-[#00FFAA] transition\">Service</a>\n        </nav>\n\n        {/* Desktop Contact Button */}\n        <div className=\"hidden md:flex items-center\">\n          <a\n            href=\"/contact\"\n            className=\"ml-4 bg-[#00FFAA] text-black px-6 py-2 rounded-full flex items-center gap-2 font-medium hover:bg-[#00FFAA]/80 transition\"\n          >\n            Contact <ArrowRight size={18} />\n          </a>\n        </div>\n\n        {/* Mobile Menu Toggle */}\n        <button\n          className=\"md:hidden text-white\"\n          onClick={() => setMenuOpen(!menuOpen)}\n        >\n          {menuOpen ? <X size={28} /> : <Menu size={28} />}\n        </button>\n      </div>\n\n      {/* Mobile Dropdown Menu */}\n      {menuOpen && (\n        <div className=\"md:hidden bg-[#111] border-t border-gray-800 text-white flex flex-col items-center py-6 space-y-4\">\n          <a\n            href=\"#\"\n            className=\"hover:text-[#00FFAA] transition text-lg\"\n            onClick={() => setMenuOpen(false)}\n          >\n            Home\n          </a>\n          <a\n            href=\"#\"\n            className=\"hover:text-[#00FFAA] transition text-lg\"\n            onClick={() => setMenuOpen(false)}\n          >\n            About\n          </a>\n          <a\n            href=\"#\"\n            className=\"hover:text-[#00FFAA] transition text-lg\"\n            onClick={() => setMenuOpen(false)}\n          >\n            Service\n          </a>\n          <a\n            href=\"#\"\n            className=\"bg-gradient-to-r from-[#00FFAA] to-[#00BFA6]\"\n            onClick={() => setMenuOpen(false)}\n          >\n            Contact <ArrowRight size={18} />\n          </a>\n        </div>\n      )}\n    </header>\n  );\n}\n"
+        }
+    ]
+}

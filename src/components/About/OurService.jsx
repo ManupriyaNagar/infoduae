@@ -9,7 +9,7 @@ export default function OurServices() {
           Our Services
         </h2>
         <p className="text-gray-200 text-base md:text-lg max-w-2xl mx-auto mt-4">
-          At <span className="font-semibold text-[#00FFAA] ">InfoD</span>, we empower individuals and businesses 
+          At <span className="font-semibold text-[#00FFAA] ">InfodD</span>, we empower individuals and businesses 
           with data-driven financial insights, helping them stay ahead in a rapidly evolving market.
         </p>
 
@@ -60,7 +60,7 @@ export default function OurServices() {
           </h3>
           <div className="space-y-4">
             <p className="text-gray-600 text-base leading-relaxed">
-              At <span className="font-semibold text-[#00FFAA]">InfoD</span>, your growth is our mission. 
+              At <span className="font-semibold text-[#00FFAA]">InfodD</span>, your growth is our mission. 
               We believe our success is built on the trust and satisfaction of our clients. 
               That's why we focus on fostering lasting relationships grounded in transparency, 
               collaboration, and integrity.  

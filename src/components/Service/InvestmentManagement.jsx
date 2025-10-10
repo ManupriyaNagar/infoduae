@@ -13,7 +13,7 @@ export default function InvestmentManagementDark() {
             Comprehensive Investment <br /> & Fund Management Solutions
           </h1>
           <p className="text-gray-200 mb-6">
-            At <span className="font-semibold text-green-600">InfoD</span>, we deliver end-to-end fund management solutions designed to navigate complex markets confidently. Our experts combine data-driven insights with strategic planning to ensure your portfolio thrives in all conditions.
+            At <span className="font-semibold text-green-600">InfodD</span>, we deliver end-to-end fund management solutions designed to navigate complex markets confidently. Our experts combine data-driven insights with strategic planning to ensure your portfolio thrives in all conditions.
           </p>
           <div className="flex flex-wrap gap-8 mt-8">
             <div>
@@ -54,7 +54,7 @@ export default function InvestmentManagementDark() {
             Professional Forex Fund Management
           </h2>
           <p className="text-gray-800 max-w-3xl mx-auto mb-8">
-            InfoD provides tailored Forex Fund Management for investors, corporates, and retail clients in Currency, Commodity, and Crypto markets. Our goal: consistent, low-risk performance with capital protection.
+            InfodD provides tailored Forex Fund Management for investors, corporates, and retail clients in Currency, Commodity, and Crypto markets. Our goal: consistent, low-risk performance with capital protection.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">

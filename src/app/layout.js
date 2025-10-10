@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "infod",
+  title: "InfodD",
   description: "Empowering Global Trading Through Intelligent Automation",
 };
 

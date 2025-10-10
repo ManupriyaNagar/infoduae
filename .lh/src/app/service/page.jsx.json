@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/service/page.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1760061349992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1760061365015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import MarketAlerts from '@/components/Service/MarketAlerts';\n import UpLearn from '@/components/Service/Uplearn';\n \n export const metadata = {\n-    title: \"Services | infod2\",\n+    title: \"Services | InfodD\",\n     description: \"Explore our services to help you achieve your financial goals.\",\n };\n \n const Service = () => {\n"
+                }
+            ],
+            "date": 1760061349992,
+            "name": "Commit-0",
+            "content": "import React from 'react';\n\nimport InvestmentManagement from '@/components/Service/InvestmentManagement';\nimport MarketAlerts from '@/components/Service/MarketAlerts';\nimport UpLearn from '@/components/Service/Uplearn';\n\nexport const metadata = {\n    title: \"Services | infod2\",\n    description: \"Explore our services to help you achieve your financial goals.\",\n};\n\nconst Service = () => {\n    return (\n        <div>\n            <InvestmentManagement/>\n            <MarketAlerts/>\n            <UpLearn/>\n        </div>\n    );\n};\n\nexport default Service;"
+        }
+    ]
+}

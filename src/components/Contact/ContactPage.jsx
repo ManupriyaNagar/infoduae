@@ -46,7 +46,7 @@ export default function ContactPage() {
         <div className="relative text-center z-10">
           <h1 className="text-4xl md:text-5xl font-semibold">Contact Us</h1>
           <p className="mt-2 text-lg md:text-xl text-gray-200">
-            InfoD is ready to provide the right solution according to your needs
+            InfodD is ready to provide the right solution according to your needs
           </p>
         </div>
       </div>
@@ -90,10 +90,10 @@ export default function ContactPage() {
               <div>
                 <h4 className="font-semibold text-gray-200">Email Us</h4>
                 <a 
-                  href="mailto:support@infod.com" 
+                  href="mailto:support@InfodD.com" 
                   className="text-gray-300 hover:text-[#00FFAA] transition-colors"
                 >
-                  support@infod.com
+                  support@InfodD.com
                 </a>
               </div>
             </div>

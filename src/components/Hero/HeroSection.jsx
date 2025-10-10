@@ -33,7 +33,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed">
-           At infod, we deliver cutting-edge algorithmic trading systems designed to empower investors across the globe. Our AI-driven strategies are engineered to optimize performance, minimize risk, and unlock consistent market opportunities
+           At InfodD, we deliver cutting-edge algorithmic trading systems designed to empower investors across the globe. Our AI-driven strategies are engineered to optimize performance, minimize risk, and unlock consistent market opportunities
           </p>
 
           {/* CTA Buttons */}
@@ -72,10 +72,10 @@ const HeroSection = () => {
         >
           <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_#00FFAA25] transition-all duration-300">
             <h3 className="text-2xl font-semibold mb-4 text-[#00FFAA]">
-              About infod:
+              About InfodD:
             </h3>
             <p className="text-gray-300 leading-relaxed text-lg">
-              Founded in Dubai, infod is redefining the way the world trades. Since our inception, we’ve been dedicated to creating innovative, data-driven trading platforms that merge technology, intelligence, and precision. <br />
+              Founded in Dubai, InfodD is redefining the way the world trades. Since our inception, we’ve been dedicated to creating innovative, data-driven trading platforms that merge technology, intelligence, and precision. <br />
               Experience seamless automation where human insight meets algorithmic excellence.
             </p>
           </div>

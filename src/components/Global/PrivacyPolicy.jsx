@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
         <div className="mb-6">
           <h2 className="text-2xl font-semibold mb-2">Introduction</h2>
           <p className="text-gray-700 leading-relaxed">
-            Infod (“we,” “our,” or “us”) values your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our website, services, and applications.
+            InfodD (“we,” “our,” or “us”) values your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our website, services, and applications.
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export default function PrivacyPolicy() {
             If you have questions or concerns regarding this Privacy Policy or your personal data, please contact us:
           </p>
           <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-            <li><strong>Email:</strong> <a href="mailto:support@infod.com" className="text-[#00FFAA] hover:underline">support@infod.com</a></li>
+            <li><strong>Email:</strong> <a href="mailto:support@InfodD.com" className="text-[#00FFAA] hover:underline">support@InfodD.com</a></li>
             <li><strong>Phone:</strong> <a href="tel:+971568591870" className="text-[#00FFAA] hover:underline">+971 56 859 1870</a></li>
             <li><strong>Address:</strong> OPAL TOWER, No-703, 7th Floor, Burj Khalifa Street, Business Bay, Dubai</li>
           </ul>

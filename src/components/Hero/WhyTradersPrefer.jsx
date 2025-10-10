@@ -7,7 +7,7 @@ const features = [
     title: "High Potential Returns",
     icon: TrendingUp,
     description:
-      "At infod, we focus on strategies designed to deliver high-potential returns. Our platform empowers Fund Managers to optimize their trading approaches, maximizing profitability while managing risk effectively.",
+      "At InfodD, we focus on strategies designed to deliver high-potential returns. Our platform empowers Fund Managers to optimize their trading approaches, maximizing profitability while managing risk effectively.",
   },
   {
     title: "Complete Transparency",
@@ -19,19 +19,19 @@ const features = [
     title: "Referral Benefits",
     icon: Users,
     description:
-      "Our referral program lets users expand their network and boost earnings. By inviting new investors or Fund Managers to infod, you can unlock additional rewards and incentives.",
+      "Our referral program lets users expand their network and boost earnings. By inviting new investors or Fund Managers to InfodD, you can unlock additional rewards and incentives.",
   },
   {
     title: "User-Friendly Experience",
     icon: ThumbsUp,
     description:
-      "We provide a seamless and hassle-free environment. infod is intuitive and easy to navigate, making it ideal for both novice and seasoned investors.",
+      "We provide a seamless and hassle-free environment. InfodD is intuitive and easy to navigate, making it ideal for both novice and seasoned investors.",
   },
   {
     title: "Consistent Performance",
     icon: RefreshCw,
     description:
-      "Consistency is the cornerstone of successful investing. infod supports Fund Managers in maintaining steady performance, ensuring reliable growth and returns for investors.",
+      "Consistency is the cornerstone of successful investing. InfodD supports Fund Managers in maintaining steady performance, ensuring reliable growth and returns for investors.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function WhyTradersPrefer() {
           viewport={{ once: true }}
           className="text-3xl md:text-6xl font-bold text-center mb-12 text-gray-900"
         >
-          Why Traders Prefer <span className="text-transparent bg-gradient-to-r from-[#00FFAA] to-[#00BFA6] bg-clip-text">infod</span>
+          Why Traders Prefer <span className="text-transparent bg-gradient-to-r from-[#00FFAA] to-[#00BFA6] bg-clip-text">InfodD</span>
         </motion.h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

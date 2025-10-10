@@ -84,10 +84,10 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="text-center md:text-right w-full md:w-auto">
             <a
-              href="mailto:support@infod.com"
+              href="mailto:support@InfodD.com"
               className="block text-2xl sm:text-4xl md:text-5xl font-light mb-2 hover:text-[#00FFAA] transition-colors"
             >
-              support@infod.com
+              support@InfodD.com
             </a>
             <a
               href="tel:9036269683"
@@ -101,7 +101,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-8 text-sm text-gray-400">
           <div className="text-center md:text-left w-full md:w-1/3">
-            <p>© 2025 Copyright : Infod</p>
+            <p>© 2025 Copyright : InfodD</p>
           </div>
 
           <div className="text-center w-full md:w-1/3">

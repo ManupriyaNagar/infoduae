@@ -4,22 +4,22 @@ export default function FounderTestimonials() {
     {
       name: "Investment Management",
       quote:
-        "At infod, our Investment Management services help clients grow and preserve wealth through strategic, data-driven asset management. We tailor portfolio strategies to align with individual goals, risk profiles, and market dynamics, providing comprehensive investment solutions that deliver long-term value and stability for every investor.",
+        "At InfodD, our Investment Management services help clients grow and preserve wealth through strategic, data-driven asset management. We tailor portfolio strategies to align with individual goals, risk profiles, and market dynamics, providing comprehensive investment solutions that deliver long-term value and stability for every investor.",
     },
     {
       name: "Market Alerts",
       quote:
-        "Stay ahead of the market with infod's real-time trading insights. Our Market Alerts deliver accurate, timely signals that empower investors to make confident decisions and optimize trading performance. With precision analytics and AI-powered forecasting, you'll never miss a profitable opportunity in today's fast-moving markets.",
+        "Stay ahead of the market with InfodD's real-time trading insights. Our Market Alerts deliver accurate, timely signals that empower investors to make confident decisions and optimize trading performance. With precision analytics and AI-powered forecasting, you'll never miss a profitable opportunity in today's fast-moving markets.",
     },
     {
       name: "Uplearn",
       quote:
-        "At infod, we believe in Uplearning—evolving beyond outdated methods and embracing innovative trading approaches. Through expert-led resources, practical insights, and AI-based strategy refinement, we help traders and investors redefine how they learn, trade, and grow in the modern financial landscape with confidence and skill.",
+        "At InfodD, we believe in Uplearning—evolving beyond outdated methods and embracing innovative trading approaches. Through expert-led resources, practical insights, and AI-based strategy refinement, we help traders and investors redefine how they learn, trade, and grow in the modern financial landscape with confidence and skill.",
     },
     {
       name: "Algo Trading Software",
       quote:
-        "Our Next-Generation Algo Trading Software combines automation, AI, and real-time analytics to execute trades with unmatched precision and speed. By eliminating manual errors and emotional biases, infod's algorithms enable smarter, faster, and more consistent trading—giving you a decisive edge in all market conditions across global exchanges.",
+        "Our Next-Generation Algo Trading Software combines automation, AI, and real-time analytics to execute trades with unmatched precision and speed. By eliminating manual errors and emotional biases, InfodD's algorithms enable smarter, faster, and more consistent trading—giving you a decisive edge in all market conditions across global exchanges.",
     },
   ];
 
@@ -29,7 +29,7 @@ export default function FounderTestimonials() {
       <div className="flex flex-col md:flex-row justify-between gap-10 mb-12">
         <div className="md:max-w-[40%]">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 md:mb-12">
-            Infod:{" "}
+            InfodD:{" "}
             <span className="text-transparent bg-gradient-to-r from-[#00FFAA] to-[#00BFA6] bg-clip-text">
               Intelligent Global Trading Solutions
             </span>
@@ -37,7 +37,7 @@ export default function FounderTestimonials() {
         </div>
         <div className="md:max-w-[60%] text-gray-800">
           <h2 className="text-lg md:text-xl leading-relaxed">
-            At infod, we don't just follow the markets—we master them. Founded
+            At InfodD, we don't just follow the markets—we master them. Founded
             in Dubai, we've been at the forefront of financial innovation,
             empowering traders and investors with advanced algorithmic trading
             technologies.
