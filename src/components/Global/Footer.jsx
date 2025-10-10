@@ -90,10 +90,10 @@ export default function Footer() {
               support@InfodD.com
             </a>
             <a
-              href="tel:9036269683"
+              href="tel:  +971 56 859 1870"
               className="text-[#00FFAA] text-base sm:text-xl hover:underline"
             >
-              9036269683
+               +971568591870
             </a>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-8 text-sm text-gray-400">
           <div className="text-center md:text-left w-full md:w-1/3">
-            <p>© 2025 Copyright : InfodD</p>
+            <p>© 2025 Copyright : InfodD Investment consultancy</p>
           </div>
 
           <div className="text-center w-full md:w-1/3">
