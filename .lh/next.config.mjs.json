@@ -1,0 +1,30 @@
+{
+    "sourceFile": "next.config.mjs",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1759995171636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1759995185859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n /** @type {import('next').NextConfig} */\n const nextConfig = {\n   output: 'standalone',\n+  distDir: 'out', // This would output to an 'out' folder\n };\n \n-export default nextConfig;\n+export default nextConfig;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759995309578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n /** @type {import('next').NextConfig} */\n const nextConfig = {\n   output: 'standalone',\n-  distDir: 'out', // This would output to an 'out' folder\n };\n \n-export default nextConfig;\n\\ No newline at end of file\n+export default nextConfig;\n"
+                },
+                {
+                    "date": 1759995361009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n /** @type {import('next').NextConfig} */\n const nextConfig = {\n-  output: 'standalone',\n+  output: 'export',\n };\n \n export default nextConfig;\n"
+                }
+            ],
+            "date": 1759995171636,
+            "name": "Commit-0",
+            "content": "/** @type {import('next').NextConfig} */\nconst nextConfig = {\n  output: 'standalone',\n};\n\nexport default nextConfig;\n"
+        }
+    ]
+}
