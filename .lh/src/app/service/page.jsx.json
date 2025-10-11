@@ -11,7 +11,7 @@
                 },
                 {
                     "date": 1760061365015,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import MarketAlerts from '@/components/Service/MarketAlerts';\n import UpLearn from '@/components/Service/Uplearn';\n \n export const metadata = {\n-    title: \"Services | infod2\",\n+    title: \"Services | InfodD\",\n     description: \"Explore our services to help you achieve your financial goals.\",\n };\n \n const Service = () => {\n"
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import MarketAlerts from '@/components/Service/MarketAlerts';\n import UpLearn from '@/components/Service/Uplearn';\n \n export const metadata = {\n-    title: \"Services | infod2\",\n+    title: \"Services | InfoD\",\n     description: \"Explore our services to help you achieve your financial goals.\",\n };\n \n const Service = () => {\n"
                 }
             ],
             "date": 1760061349992,

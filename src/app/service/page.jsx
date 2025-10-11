@@ -5,7 +5,7 @@ import MarketAlerts from '@/components/Service/MarketAlerts';
 import UpLearn from '@/components/Service/Uplearn';
 
 export const metadata = {
-    title: "Services | InfodD",
+    title: "Services | InfoD",
     description: "Explore our services to help you achieve your financial goals.",
 };
 

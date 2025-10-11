@@ -33,7 +33,7 @@ export default function CurrencyMarketStrategies() {
               A Dynamic Global Market
             </h3>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
-              At InfodD, we operate at the heart of the world’s most liquid and
+              At InfoD, we operate at the heart of the world’s most liquid and
               fast-moving financial ecosystem — the Forex market. Open 24/5, it
               offers limitless trading opportunities for investors,
               institutions, and fund managers seeking to capitalize on market
@@ -56,7 +56,7 @@ export default function CurrencyMarketStrategies() {
             <p className="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
               We believe in trading backed by intelligence. Through advanced
               technical analysis, data modeling, and AI-enhanced algorithms,
-              InfodD empowers traders to identify emerging trends, determine
+              InfoD empowers traders to identify emerging trends, determine
               precise entry and exit points, and make informed, data-driven
               decisions that enhance performance and consistency.
             </p>
@@ -76,7 +76,7 @@ export default function CurrencyMarketStrategies() {
             </h3>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
               In a market where leverage amplifies both profit and risk, risk
-              management is the cornerstone of long-term success. At InfodD, we
+              management is the cornerstone of long-term success. At InfoD, we
               emphasize disciplined strategy execution, position sizing, and
               automated stop-loss systems to safeguard capital and sustain
               growth — ensuring every trade aligns with a well-calibrated plan.

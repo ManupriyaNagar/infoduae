@@ -5,37 +5,37 @@ import { FaStar, FaDatabase } from "react-icons/fa";
 const testimonials = [
   {
     quote:
-      "InfodD has completely streamlined our business analytics process. Their platform makes data insights easy to understand and act upon — saving us hours every week.",
+      "InfoD has completely streamlined our business analytics process. Their platform makes data insights easy to understand and act upon — saving us hours every week.",
     name: "Rohit Sharma, Business Analyst – India",
     title: "Simplified data management and insights",
   },
   {
     quote:
-      "As a small business owner, InfodD’s financial dashboard has been a game-changer. I can now track performance, revenue trends, and customer data effortlessly in real-time.",
+      "As a small business owner, InfoD’s financial dashboard has been a game-changer. I can now track performance, revenue trends, and customer data effortlessly in real-time.",
     name: "Ananya Mehta, Founder – Delhi",
     title: "Powerful insights for everyday decisions",
   },
   {
     quote:
-      "We implemented InfodD’s automation tools across multiple departments. The system is reliable, secure, and beautifully designed. It’s everything we needed for our growing team.",
+      "We implemented InfoD’s automation tools across multiple departments. The system is reliable, secure, and beautifully designed. It’s everything we needed for our growing team.",
     name: "James Anderson, Operations Head – Singapore",
     title: "Reliable and scalable automation platform",
   },
   {
     quote:
-      "InfodD provides the clarity and transparency that our finance team needed. Reports that once took days are now ready in minutes. Highly recommend for data-driven organizations.",
+      "InfoD provides the clarity and transparency that our finance team needed. Reports that once took days are now ready in minutes. Highly recommend for data-driven organizations.",
     name: "Priya Nair, Finance Manager – UAE",
     title: "Data-driven decisions made simple",
   },
   {
     quote:
-      "The support team at InfodD is outstanding. They guided us through every setup step and customized dashboards exactly the way we wanted. Excellent experience overall!",
+      "The support team at InfoD is outstanding. They guided us through every setup step and customized dashboards exactly the way we wanted. Excellent experience overall!",
     name: "Vikram Patel, CTO – India",
     title: "Exceptional support and customization",
   },
   {
     quote:
-      "InfodD’s analytics suite has helped us identify market patterns and improve business forecasting accuracy. It’s not just a tool, it’s an intelligent partner for growth.",
+      "InfoD’s analytics suite has helped us identify market patterns and improve business forecasting accuracy. It’s not just a tool, it’s an intelligent partner for growth.",
     name: "Sophia Lee, Data Strategist – Malaysia",
     title: "Smart analytics for smarter business",
   },

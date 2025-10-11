@@ -18,7 +18,7 @@ export default function Header() {
         {/* Left Logo Section */}
         <div className="flex items-center gap-3">
           <div>
-            <h1 className="text-white text-3xl md:text-4xl font-semibold">InfodD</h1>
+            <h1 className="text-white text-3xl md:text-4xl font-semibold">InfoD</h1>
             <p className="text-white text-[0.6rem] mt-1">Investment consultancy</p>
           </div>
         </div>

@@ -16,7 +16,7 @@ export default function AboutJourney() {
           </div>
           <div className="flex-1 text-gray-600 text-xl leading-relaxed">
             <p>
-             Built by data and trading specialists, InfodD provides intelligent, AI-driven trading platforms that simplify complex financial decisions and maximize market opportunities.
+             Built by data and trading specialists, InfoD provides intelligent, AI-driven trading platforms that simplify complex financial decisions and maximize market opportunities.
             </p>
           </div>
         </div>
@@ -38,7 +38,7 @@ export default function AboutJourney() {
         <div className="flex flex-col md:flex-row justify-between items-start mb-8">
           <div className="flex-1 mb-8 md:mb-0">
             <h3 className="text-2xl md:text-3xl font-semibold mb-4">
-              At InfodD, we are passionate about empowering traders and investors to take control of their financial strategies and unlock their full market potential.
+              At InfoD, we are passionate about empowering traders and investors to take control of their financial strategies and unlock their full market potential.
             </h3>
             <p className="text-gray-600 leading-relaxed text-base">
              We are dedicated to transforming the way individuals and businesses trade and manage investments. Our AI-driven, data-backed solutions provide intuitive, precise, and innovative tools that help users achieve consistent financial growth and success.

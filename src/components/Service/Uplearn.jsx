@@ -27,7 +27,7 @@ export default function UpLearn() {
       a: "Timelines are flexible based on your goals and learning speed.",
     },
     {
-      q: "What makes InfodD’s UpLearn unique?",
+      q: "What makes InfoD’s UpLearn unique?",
       a: "A blend of expert mentorship, AI tools, and real-world application.",
     },
     {
@@ -48,7 +48,7 @@ export default function UpLearn() {
           Professional Trading Education
         </motion.h2>
         <p className="text-xl md:text-2xl font-light mb-12 text-gray-300">
-          Master the Markets with InfodD’s <span className="text-[#00FFAA]">UpLearn</span> Program
+          Master the Markets with InfoD’s <span className="text-[#00FFAA]">UpLearn</span> Program
         </p>
 
         {/* Stats */}
@@ -100,7 +100,7 @@ export default function UpLearn() {
         <div className="bg-[#0a0a0a] border border-gray-800 rounded-3xl p-10 mb-16 text-left">
           <h3 className="text-2xl font-semibold mb-4 text-[#00FFAA]">Algo Trading Software</h3>
           <p className="text-gray-300 mb-4">
-            Revolutionize your trading with automation. InfodD’s Algo Trading Software executes trades in real-time using
+            Revolutionize your trading with automation. InfoD’s Algo Trading Software executes trades in real-time using
             AI-driven strategies for precise and consistent results.
           </p>
           <ul className="list-disc list-inside text-gray-400 space-y-2">
